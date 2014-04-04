@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* 由于头部fixed，导致anchor定位偏差 */
+article {
+  h2, h3, h4, h5, h6 {
+    &:before {
+      content: "";
+      display: block;
+      height: 51px;
+      margin-top: -51px;
+    }
+  }
+}
+
+/* 导航 */
+.article-nav {
+  position: fixed;
+  z-index: 99;
+  background: #fff;
+  width: 260px;
+  right: 0;
+  top: 51px;
+  padding: 3px 5px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 20px;
+}
+.toc {
+  ul {
+    margin-top: 2px;
+    padding-left: 20px;
+    li {
+      margin: 2px 0;
+    }
+  }
+  & > ul {
+    padding-left: 0;
+    & > li > a {
+      background: #efefef;
+      border: 1px solid;
+      display: block;
+      font-weight: bold;
+      padding: 2px 4px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .highlight {
+    color: #03f;
+    font-weight: bold;
+  }
+}
+
+
+@media all and (min-width: 1024px) {
+  aside.right section {
+    &.copyright {
+      display: block;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .article-nav {
+    position: static;
+    clear: both;
+    float: right;
+    width: auto;
+    margin: 0 0 5px 10px;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .article-nav {
+    float: none;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,28 @@
+.list {
+  font-size: 16px;
+  line-height: 30px;
+  h1 {
+    margin: 15px 0 0 -20px;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    border-bottom: 1px dashed #ddd;
+    padding: 3px 5px;
+    &:first-child {
+      margin-top: 10px;
+    }
+    &:hover {
+      background: #efefef;
+    }
+  }
+  time {
+    float: right;
+  }
+}
+
+
+
+
+

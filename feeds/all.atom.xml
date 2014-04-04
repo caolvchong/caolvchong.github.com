@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tom's blog</title><link href="http://tomjoke.com/" rel="alternate"></link><link href="http://tomjoke.com/feeds/all.atom.xml" rel="self"></link><id>http://tomjoke.com/</id><updated>2014-04-03T00:00:00+08:00</updated><entry><title>在ND的日子</title><link href="http://tomjoke.com/in%20the%20days%20of%20ND.html" rel="alternate"></link><updated>2014-04-03T00:00:00+08:00</updated><author><name>Tom</name></author><id>tag:tomjoke.com,2014-04-03:in the days of ND.html</id><summary type="html">&lt;p&gt;此文算是一篇我的ND一些回忆与工作总结。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://weibo.com/tsung" title="tsung"&gt;tsung&lt;/a&gt; 2009年推荐我来，我觉得ex公司的项目离开了我会挺惨，就继续呆了1年。接着换了个项目，也没什么意思，同时觉得自己的工资实在是挺寒酸的，便遂了&lt;a href="http://weibo.com/tsung" title="tsung"&gt;tsung&lt;/a&gt;的愿。后来ex的项目依旧一路走了下来，现在想想，当初的想法和代码都挺幼稚的，没有什么东西离了你就活不下去。&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;在ND三年多，做的比较让自己满意的不是写代码，却是踢球这件事情。当时不知道谁提议，同为球迷的同事们一拍即合，在飞众足球广场预订了场地，五人制。我稍微组织，AA场地费，每周五晚上不见不散，持续了将近两年。如今不知道旭哥的孩子生了没，长得像谁；张金鹏找了女朋友，不时在QQ空间晒点照片，我单身的那段时间差点取消了对他的关注。&lt;/p&gt;
+&lt;p&gt;后来能拉到一起踢球的人少了起来，网龙足球队拉我入伙，便开始了fafa，司职边后卫，截止目前踢了两个多赛季进了两个球，都是热身赛进的，也挺开心。两个完整的赛季足球队都完成保级目标，位处中游。足球让我认识了不少朋友，弥补了些大学放弃足球两年多的遗憾；还有一个人站在偌大球场上被人打成筛子的无助感，多么痛的领悟。&lt;/p&gt;
+&lt;p&gt;未来的日子希望公司可以给足球队多一些支持，毕竟足球队球衣背后印着＂中国网龙＂，中超的恒大，fafa的网龙（说到这里，我被自己的正能量感动且激动得有点哽咽了）。&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;回到正业，先说说我的外号--叫兽。外号的来源有很多，据考证，叫兽的拼音首字母和JavaScript缩写一致，我主要做前端，会写一些js，因此得名。&lt;/p&gt;
+&lt;p&gt;来ND缘起一个叫&lt;a href="http://momo.im" title="momo"&gt;momo&lt;/a&gt;的项目，包括IM、通讯录和社交，过程中也尝试了活动，二手交易等。这个团队中氛围不错，有些我原来就熟识的面孔，也认识了些技术能力不错的小伙。项目最终没有起来，倒是附属产品社交动态，交流、交心甚至交配，予取予求。留在&lt;a href="http://momo.im" title="momo"&gt;momo&lt;/a&gt;小桥流水中的身影，依稀可以看到纯真漂亮的代言人，美丽直爽的津姨，还有老杨的照，周彤的笑，sundb的帅和骚，等等。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://momo.im" title="momo"&gt;momo&lt;/a&gt;就像是我的孩子一般，虽然不尽如人意的地方，却也可爱。后来有段时间想重构下，种种计划生育的原因而作罢了。痛心疾首的是，和别人说起我参与过这个项目，大多数情况下他们的反应是：那个约炮软件吗？WQNMLGB，小姐，你的帐号是多少？&lt;/p&gt;
+&lt;p&gt;后来做了个开源的项目&lt;a href="https://github.com/caolvchong/gazira" title="gazira"&gt;gazira&lt;/a&gt;哥斯拉，是个养子。&lt;a href="https://github.com/caolvchong/gazira" title="gazira"&gt;gazira&lt;/a&gt;名字虽然是怪兽，其实是个可爱的小天使，欢迎你随时和他交朋友，他爸爸也会很开心的。&lt;/p&gt;
+&lt;p&gt;中间断断续续做了些项目，大部分都记得不太清晰了。有天我在851门口遇到一个也在ND的大学同学，但相互之间不是很熟，名字忘了脸记得，我们挺热情地打了个招呼，但转身时候估计都在嘀咕：这傻逼叫啥名字来着。那些项目差不多就是这种感觉。&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;本来还写了些关于管理与项目的事，还是删掉了。做任何事，无论技术还是项目，你有热情有投入，总不会太差。会造成太差的技术或者项目的，CMMI还是敏捷，都不会是良药。做项目时你感受到踢球时被打成筛子的感觉了吗？&lt;/p&gt;
+&lt;p&gt;最后推荐一部老电影：＜&lt;a href="http://movie.douban.com/subject/1945330/" title="迷雾"&gt;迷雾&lt;/a&gt;＞。在ND的三年多，还算是快乐与自由多一些。天下没有不散的筵席，下次请吃饭，记得叫我。&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;注：本文写于2014-2-19，因历史原因今天发。&lt;/p&gt;
+&lt;p&gt;后记：离开的时候收到&lt;a href="https://github.com/chengbapi" title="chengbapi"&gt;chengbapi&lt;/a&gt;一条曼联的围巾，让我这个曼联伪球迷挺感动的。&lt;/p&gt;
+&lt;p&gt;&lt;img src="/static/images/article/manutd-scarf.png" width="100%" alt="前端工程师"/&gt;&lt;/p&gt;</summary><category term="life"></category></entry><entry><title>ubuntu 12.04 LTS 配备</title><link href="http://tomjoke.com/ubuntu%2012.04%20LTS%20development%20environment%20configuration.html" rel="alternate"></link><updated>2014-02-09T00:00:00+08:00</updated><author><name>Tom</name></author><id>tag:tomjoke.com,2014-02-09:ubuntu 12.04 LTS development environment configuration.html</id><summary type="html">
+&lt;h2 id="_1"&gt;系统安装&lt;/h2&gt;
+&lt;p&gt;从windows安装，这里是以XP为例&lt;/p&gt;
+&lt;h3 id="grub4dos"&gt;grub4dos安装&lt;/h3&gt;
+&lt;p&gt;下载grub4dos，解压后将 grldr，menu.lst，grldr.mbr，grub.exe 放到系统盘根目录&lt;/p&gt;
+&lt;h3 id="iso"&gt;iso文件准备&lt;/h3&gt;
+&lt;p&gt;下载 ubuntu12.04的iso文件，将iso放到系统盘跟目录，并将其中的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;casper文件夹下面的vmlinuz和initrd.lz&lt;/li&gt;
+&lt;li&gt;.disk文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提取到系统盘跟目录。然后修改menu.lst，在其末尾增加&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;title Install Ubuntu12.04
+root (hd0,0)
+kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-12.04-desktop-i386.iso locale=zh_CN.UTF-8
+initrd (hd0,0)/initrd.lz
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;hd(x,y) 表示第x块硬盘的第y个分区，x、y都是从0开始，例如：
+只有一块硬盘，主分区在C盘，则用hd(0, 0)表示&lt;/p&gt;
+&lt;p&gt;修改系统盘跟目录下的系统隐藏文件boot.ini，在文件最后添加如下内容&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;c:\grldr=”Ubuntu Install”
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;以增加grub启动&lt;/p&gt;
+&lt;h3 id="_2"&gt;安装注意事项&lt;/h3&gt;
+&lt;p&gt;通过grub引导进入ubuntu安装界面后，注意下列以下事项：
++ 断网，避免安装过程中去网络下载导致安装非常久。
++ 同时卸载isodevice：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo umount -l /isodevice
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="_3"&gt;系统配置&lt;/h2&gt;
+&lt;h3 id="_4"&gt;常用目录结构&lt;/h3&gt;
+&lt;p&gt;在/home/tom/下建立 workspace、book、temp、software目录
+同时将 桌面、文档、下载 软链接为 desktop、docs、download&lt;/p&gt;
+&lt;h3 id="_5"&gt;输入法&lt;/h3&gt;
+&lt;p&gt;默认ibus输入法翻页不能用 +/-，执行&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;/usr/lib/ibus-sunpinyin/ibus-setup-sunpinyin
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;调出sunpinyin设置面板，选keyboard - page flip，勾选 -/= 即可&lt;/p&gt;
+&lt;h3 id="_6"&gt;软件源&lt;/h3&gt;
+&lt;p&gt;软件中心 - 编辑 - 软件源 - 下载自：其他站点 - 选择最佳服务器
+得到最佳服务器或执行&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="_7"&gt;中文支持&lt;/h3&gt;
+&lt;p&gt;系统设置 - 语言支持，然后会自动提示安装&lt;/p&gt;
+&lt;h3 id="_8"&gt;显卡驱动&lt;/h3&gt;
+&lt;p&gt;系统设置 - 附加驱动，然后会自动提示激活安装驱动&lt;/p&gt;
+&lt;h3 id="_9"&gt;一些所需环境支持&lt;/h3&gt;
+&lt;p&gt;CURL&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install curl
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;SSL&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install libssl-dev
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;bz2&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install libbz2-dev
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="_10"&gt;系统软件&lt;/h2&gt;
+&lt;h3 id="gnome"&gt;gnome环境&lt;/h3&gt;
+&lt;p&gt;使用gnome-shell，安装需要执行以下命令：&lt;/p&gt;
+&lt;p&gt;首先添加PPA&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:gnome3-team/gnome3
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:ricotz/testing
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后安装&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install gnome-shell &lt;span class="c"&gt;# 安装Gnome-shell 桌面&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install gnome-shell-extensions &lt;span class="c"&gt;# 安装extensions&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install gnome-tweak-tool &lt;span class="c"&gt;# 安装配置工具&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;有可能ubuntu桌面无法右键，并且没有图标，可以使用 gnome-tweak 进行设置：桌面 - 由文件管理器处理桌面&lt;/p&gt;
+&lt;h3 id="_11"&gt;便签&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install tomboy
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="_12"&gt;控制台增强&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install terminator
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="markdown"&gt;markdown&lt;/h3&gt;
+&lt;p&gt;使用 &lt;a href="http://dillinger.io"&gt;dillinger 在线编辑器&lt;/a&gt; ，支持localstorage保存，实时预览，从github、dropbox、google drive导入&lt;/p&gt;
+&lt;h3 id="vim"&gt;vim&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install vim
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="flash"&gt;flash&lt;/h3&gt;
+&lt;p&gt;软件中心 - 搜索flash，进行安装。或者：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install flashplugin-installer
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="chrome"&gt;chrome&lt;/h3&gt;
+&lt;p&gt;访问 &lt;a href="http://www.google.com/intl/zh-CN/chrome"&gt;chrome下载地址&lt;/a&gt;，下载对应版本安装即可&lt;/p&gt;
+&lt;h3 id="firefox"&gt;firefox更新到最新版本&lt;/h3&gt;
+&lt;p&gt;从 &lt;a href="http://firefox.com.cn/download/"&gt;firefox下载地址&lt;/a&gt; 下载最新版本firefox，解压即可使用。我解压到 /home/tom/software/firefox下
+删除旧版本firefox&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get remove firefox
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;添加命令快捷方式&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s /home/tom/software/firefox/firefox /usr/bin/firefox
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;添加菜单快捷方式：
+应用程序 - 系统工具 - 首选项 - 主菜单 - 互联网 - 新建项目
+然后选择firefox即可&lt;/p&gt;
+&lt;p&gt;firefox常用插件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;firebug&lt;/li&gt;
+&lt;li&gt;firestorage plus&lt;/li&gt;
+&lt;li&gt;firesass&lt;/li&gt;
+&lt;li&gt;web developer&lt;/li&gt;
+&lt;li&gt;yeslow&lt;/li&gt;
+&lt;li&gt;firegestures&lt;/li&gt;
+&lt;li&gt;greasemonkey&lt;/li&gt;
+&lt;li&gt;autoproxy&lt;/li&gt;
+&lt;li&gt;speed dail&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="virtualbox"&gt;virtualbox 虚拟机&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install virtualbox-ose
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后下载自己需要的iso装机&lt;/p&gt;
+&lt;h3 id="rar"&gt;rar&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install rar
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install unrar
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="_13"&gt;开发环境&lt;/h2&gt;
+&lt;h3 id="_14"&gt;版本管理&lt;/h3&gt;
+&lt;p&gt;git&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install git-core
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;svn&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install subversion
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="java"&gt;java环境&lt;/h3&gt;
+&lt;p&gt;从 &lt;a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"&gt;oracle java下载地址&lt;/a&gt; 下载自己系统所需版本，解压。解压目录记作 JAVA_PATH
+在&lt;code&gt;/etc/profile&lt;/code&gt;文件末尾增加一下内容：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;JAVA_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;JAVA_PATH
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;JRE_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;JAVA_PATH/jre
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;CLASSPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;.:&lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/lib/dt.jar:&lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/lib/tools.jar:&lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/lib:&lt;span class="nv"&gt;$JRE_HOME&lt;/span&gt;/lib:&lt;span class="nv"&gt;$CLASSPATH&lt;/span&gt;
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/bin:&lt;span class="nv"&gt;$PATH&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;上面的JAVA_PATH需要修改为刚才jdk的解压路径。执行：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; /etc/profile
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;让刚才的配置生效。然后执行以下命令进行配置：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo update-alternatives --install &lt;span class="s2"&gt;"/usr/bin/java"&lt;/span&gt; &lt;span class="s2"&gt;"java"&lt;/span&gt; &lt;span class="s2"&gt;"JAVA_PATH/bin/java"&lt;/span&gt; 300
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo update-alternatives --install &lt;span class="s2"&gt;"/usr/bin/javac"&lt;/span&gt; &lt;span class="s2"&gt;"javac"&lt;/span&gt; &lt;span class="s2"&gt;"JAVA_PATH/bin/javac"&lt;/span&gt; 300
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo update-alternatives --install &lt;span class="s2"&gt;"/usr/bin/javaws"&lt;/span&gt; &lt;span class="s2"&gt;"javaws"&lt;/span&gt; &lt;span class="s2"&gt;"JAVA_PATH/bin/javaws"&lt;/span&gt; 300
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo update-alternatives --config java
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo update-alternatives --config javac
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo update-alternatives --config javaws
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;同样，需要将上面的JAVA_PATH需要修改为刚才jdk的解压路径。&lt;/p&gt;
+&lt;p&gt;执行&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;java -version
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;查看java环境是否安装成功。&lt;/p&gt;
+&lt;h3 id="web"&gt;web服务器&lt;/h3&gt;
+&lt;p&gt;nginx&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install nginx
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;php &amp;amp; mysql&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install php5-cli php5-cgi mysql-server php5-mysql
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install spawn-fcgi
+&lt;span class="nv"&gt;$ &lt;/span&gt;spawn-fcgi -a 127.0.0.1 -p 9000 -C 10 -u www-data -f /usr/bin/php-cgi
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;同时，将fastcgi启动加入系统启动，编辑 &lt;code&gt;/etc/rc.local&lt;/code&gt;，在 &lt;code&gt;exit 0&lt;/code&gt; 前面添加：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;spawn-fcgi -a 127.0.0.1 -p 9000 -C 10 -u www-data -f /usr/bin/php-cgi
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;下面是nginx支持虚拟主机的一份简要配置：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# workspace，使用localhost&lt;/span&gt;
+&lt;span class="k"&gt;server&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kn"&gt;listen&lt;/span&gt; &lt;span class="n"&gt;127.0.0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="kn"&gt;root&lt;/span&gt; &lt;span class="s"&gt;/home/tom/workspace&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kn"&gt;index&lt;/span&gt; &lt;span class="s"&gt;index.php&lt;/span&gt; &lt;span class="s"&gt;index.html&lt;/span&gt; &lt;span class="s"&gt;index.htm&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kn"&gt;server_name&lt;/span&gt; &lt;span class="s"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kn"&gt;autoindex&lt;/span&gt; &lt;span class="no"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kn"&gt;autoindex_exact_size&lt;/span&gt; &lt;span class="no"&gt;off&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kn"&gt;autoindex_localtime&lt;/span&gt;  &lt;span class="no"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="kn"&gt;location&lt;/span&gt; &lt;span class="s"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="kn"&gt;try_files&lt;/span&gt; &lt;span class="nv"&gt;$uri&lt;/span&gt; &lt;span class="nv"&gt;$uri/&lt;/span&gt; &lt;span class="s"&gt;/index.html&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+
+    &lt;span class="kn"&gt;location&lt;/span&gt; &lt;span class="s"&gt;/doc/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="kn"&gt;alias&lt;/span&gt; &lt;span class="s"&gt;/usr/share/doc/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="kn"&gt;autoindex&lt;/span&gt; &lt;span class="no"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="kn"&gt;allow&lt;/span&gt; &lt;span class="mi"&gt;127&lt;/span&gt;&lt;span class="s"&gt;.0.0.1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="kn"&gt;deny&lt;/span&gt; &lt;span class="s"&gt;all&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="kn"&gt;location&lt;/span&gt; &lt;span class="p"&gt;~&lt;/span&gt; &lt;span class="sr"&gt;\.php$&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="kn"&gt;include&lt;/span&gt; &lt;span class="s"&gt;/etc/nginx/fastcgi_params&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;#需放在第一行，否则会出错&lt;/span&gt;
+            &lt;span class="kn"&gt;fastcgi_pass&lt;/span&gt; &lt;span class="n"&gt;127.0.0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;9000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="kn"&gt;fastcgi_index&lt;/span&gt; &lt;span class="s"&gt;index.php&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="kn"&gt;fastcgi_param&lt;/span&gt; &lt;span class="s"&gt;SCRIPT_FILENAME&lt;/span&gt; &lt;span class="s"&gt;/home/tom/workspace&lt;/span&gt;&lt;span class="nv"&gt;$fastcgi_script_name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# 虚拟主机：greasemonkey&lt;/span&gt;
+&lt;span class="k"&gt;server&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="kn"&gt;listen&lt;/span&gt; &lt;span class="n"&gt;127.0.0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+        &lt;span class="kn"&gt;root&lt;/span&gt; &lt;span class="s"&gt;/home/tom/workspace/gm_sources&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kn"&gt;index&lt;/span&gt; &lt;span class="s"&gt;index.html&lt;/span&gt; &lt;span class="s"&gt;index.htm&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kn"&gt;server_name&lt;/span&gt; &lt;span class="s"&gt;gm.me&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kn"&gt;autoindex&lt;/span&gt; &lt;span class="no"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kn"&gt;autoindex_exact_size&lt;/span&gt; &lt;span class="no"&gt;off&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="kn"&gt;autoindex_localtime&lt;/span&gt;  &lt;span class="no"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+        &lt;span class="kn"&gt;location&lt;/span&gt; &lt;span class="s"&gt;/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="kn"&gt;try_files&lt;/span&gt; &lt;span class="nv"&gt;$uri&lt;/span&gt; &lt;span class="nv"&gt;$uri/&lt;/span&gt; &lt;span class="s"&gt;/index.html&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+
+        &lt;span class="kn"&gt;location&lt;/span&gt; &lt;span class="s"&gt;/doc/&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="kn"&gt;alias&lt;/span&gt; &lt;span class="s"&gt;/usr/share/doc/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="kn"&gt;autoindex&lt;/span&gt; &lt;span class="no"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="kn"&gt;allow&lt;/span&gt; &lt;span class="mi"&gt;127&lt;/span&gt;&lt;span class="s"&gt;.0.0.1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="kn"&gt;deny&lt;/span&gt; &lt;span class="s"&gt;all&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="node"&gt;node环境&lt;/h3&gt;
+&lt;p&gt;使用nvm来版本管理node：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone git://github.com/creationix/nvm.git ~/.nvm
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;加入环境变量，并刷新：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'. $HOME/.nvm/nvm.sh'&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc 
+&lt;span class="nv"&gt;$ &lt;/span&gt;. ~/.bashrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;查看node可用版本：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;nvm ls-remote
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;比如当前最新版本为 v0.11.11，进行安装：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;nvm install v0.11.11
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;nvm其他常用使用为：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;nvm use v0.11.11 &lt;span class="c"&gt;# 使用0.11.11为当前shell的node版本，对其他shell是无效的&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;nvm &lt;span class="nb"&gt;alias &lt;/span&gt;default v0.11.11 &lt;span class="c"&gt;# 将v0.11.11设置为默认的node版本&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;nvm ls &lt;span class="c"&gt;# 查看当前系统安装的node所有版本&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;node 一些常用全局插件&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;npm install grunt-cli -g
+&lt;span class="nv"&gt;$ &lt;/span&gt;npm install tpl2js
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="python"&gt;python环境&lt;/h3&gt;
+&lt;p&gt;使用pythonbrew管理python：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;curl -kL http://xrl.us/pythonbrewinstall | bash
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;pythonbrew就会安装到 ~/.pythonbrew，然后设置环境变量：
+在~/.bashhrc 文件追加下面这一行&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;[[&lt;/span&gt; -s &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.pythonbrew/etc/bashrc &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/.pythonbrew/etc/bashrc
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;查看可用python版本：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew list -k
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;安装某个版本：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew install 2.7.5
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;pythonbrew其他常用命令：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew switch 2.7.2 &lt;span class="c"&gt;# 使用某个版本的python，多个shell之间永久存在&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew use 2.7.2 &lt;span class="c"&gt;# 仅在当前shell中使用某个版本的python&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew list &lt;span class="c"&gt;# 罗列系统中已经安装的python&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew uninstall 2.7.2 &lt;span class="c"&gt;# 卸载某个版本的python&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew update --master &lt;span class="c"&gt;# 升级pythonbrew到最新版本&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;在pythonbrew使用virtualenv：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew venv init &lt;span class="c"&gt;# 初始化安装virtualenv&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew venv create proj &lt;span class="c"&gt;# 创建某个隔离环境&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew venv list &lt;span class="c"&gt;# 罗列当前创建的所有隔离环境&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew venv use proj &lt;span class="c"&gt;# 进入并使用某个隔离环境&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew venv delete proj &lt;span class="c"&gt;# 删除某个隔离环境&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pythonbrew venv rename proj proj2 &lt;span class="c"&gt;# 重命名某个隔离环境&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="ruby"&gt;ruby环境&lt;/h3&gt;
+&lt;p&gt;使用rvm管理ruby：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;curl -L get.rvm.io | bash -s stable
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bash_profile
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，这样能提高安装速度&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sed -i -e &lt;span class="s1"&gt;'s/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g'&lt;/span&gt; ~/.rvm/config/db
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;列出已知的ruby版本&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;rvm list known
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;安装某个版本，例如：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;rvm install 2.1.0
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;如果 rvm use 出现错误，提示 &lt;code&gt;RVM is not a function&lt;/code&gt;，可以尝试将下面这行添加到 .bashrc 中&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;amp;&amp;amp; source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;更多的详细信息可以参考 &lt;a href="http://www.reyesyang.info/articles/27-install-rvm-step-by-step-and-why-rvm-is-not-a-function"&gt;手把手安装RVM以及为什么RVM is not a function&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;rvm其他常用命令：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;rvm use 1.9.3 &lt;span class="c"&gt;# 使用一个ruby版本&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;rvm use 1.9.3 --default  &lt;span class="c"&gt;# 设置为默认版本&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;rvm list &lt;span class="c"&gt;# 查询已经安装的ruby&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;rvm remove 1.9.2 &lt;span class="c"&gt;# 卸载一个已安装版本&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;安装sass：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gem install sass
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="ubuntu"></category></entry><entry><title>javascript中的模板</title><link href="http://tomjoke.com/template%20in%20javascript.html" rel="alternate"></link><updated>2013-08-23T00:00:00+08:00</updated><author><name>Tom</name></author><id>tag:tomjoke.com,2013-08-23:template in javascript.html</id><summary type="html">
+&lt;h2 id="_1"&gt;字符串困境&lt;/h2&gt;
+&lt;p&gt;先来看看下面，这些代码都真实存在某些项目中：&lt;/p&gt;
+&lt;p&gt;push方式&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;searchAuthList&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+        &lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s1"&gt;'/user/issuers'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s1"&gt;'get'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nx"&gt;dataType&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s1"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nx"&gt;success&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;users&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;arrHtml&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[];&lt;/span&gt;
+            &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;tr class="auth-tr-title"&amp;gt;&amp;lt;th class="auth-th-name"&amp;gt;姓名&amp;lt;/th&amp;gt;&amp;lt;th class="auth-th-name"&amp;gt;部门&amp;lt;/th&amp;gt;&amp;lt;th class="auth-th-numb"&amp;gt;发起悬赏数量&amp;lt;/th&amp;gt;&amp;lt;th class="auth-th-opr"&amp;gt;操作&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;users&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;user&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;users&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+                &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;deptName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;deptName&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nx"&gt;DEPT_NAME&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;tr&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;td&amp;gt;'&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;/td&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;td&amp;gt;'&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;deptName&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;/td&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;td&amp;gt;'&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;issue&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;/td&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;td&amp;gt;&amp;lt;a reward-id="'&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;_id&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;'" data-action="cancelAuth"&amp;gt;取消授权&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+                &lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;push&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;/tr&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#authorizorList'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;html&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arrHtml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;直接拼接方式&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;rankAjax&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;rid&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+        &lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'/rank/top10'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'get'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nx"&gt;dataType&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'json'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;method&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;rid&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;success&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;textStatus&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+            &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;ul&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="o"&gt;===&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;li&amp;gt;暂无排行&amp;lt;/li&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+                    &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'    &amp;lt;li&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                    &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'        &amp;lt;div class="cnt"&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                    &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'            '&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'. '&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                    &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'        &amp;lt;/div&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;rid&lt;/span&gt;&lt;span class="o"&gt;===&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+                        &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'        &amp;lt;div class="fr"&amp;gt;参与'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="nx"&gt;joined&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'个悬赏&amp;lt;/div&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                    &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;rid&lt;/span&gt;&lt;span class="o"&gt;===&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+                        &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'        &amp;lt;div class="fr"&amp;gt;贡献值：'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="nx"&gt;points&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'&amp;lt;/div&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                    &lt;span class="p"&gt;}&lt;/span&gt;
+                    &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'    &amp;lt;/li&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+                &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="nx"&gt;info&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;/ul&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'.xs_rank'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;直接在javascript中写html，主要存在的问题是可读性差，维护难度大。一旦代码量达到一定程度，这些字符串拼接会成为代码失控的一个重要原因。&lt;br/&gt;
+注：&lt;code&gt;push方式&lt;/code&gt; 还是 &lt;code&gt;+方式&lt;/code&gt; 哪种效率更高，这样的讨论很多，这里就有一篇： &lt;a href="http://www.zhihu.com/question/19747496" title="字符串拼接效率"&gt;传送门&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后再来看看使用模版的代码：&lt;br/&gt;
+模版代码&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"weibo"&lt;/span&gt; &lt;span class="na"&gt;data-tid=&lt;/span&gt;&lt;span class="s"&gt;"{{topic.tid}}"&lt;/span&gt; &lt;span class="na"&gt;data-role=&lt;/span&gt;&lt;span class="s"&gt;"weibo"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"header"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    {{Global.Helper.avatar(topic.user)}}
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"name-and-date"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        {{Global.Helper.userLink(topic.user)}}
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;data-role=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;{{Global.Helper.cuteDate(topic.post_time)}}&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&lt;/span&gt; &lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"emptyspan"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;来自{{topic.from_string}}&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"emptyspan"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;阅读({{topic.glances}})&lt;span class="nt"&gt;&amp;lt;span&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;使用&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tpl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'path/to/template'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;tpl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;render&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+    &lt;span class="nx"&gt;topic&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;        
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="_2"&gt;模板系统&lt;/h2&gt;
+&lt;p&gt;javascript中的所谓模板，本质就是HTML，在其中可以输入一些变量，达到动态输出的目的。为了满足可读性和维护方面的成本，就要求这些模板在书写的时候就是HTML。
+这些在WEB相关的模板，无论后端还是前端，都有体现。比如PHP中的Smarty，nodeJS中的EJS；前端中的&lt;a href="http://handlebarsjs.com" title="handlerbars模板"&gt;handlebars&lt;/a&gt;，等等。&lt;/p&gt;
+&lt;p&gt;模板设计的一个原则： &lt;strong&gt;简单，减少逻辑性&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个原则是程序设计上 keep it simple 的体现。视图方面保持简单，少逻辑，对于后期的维护帮助是非常大的。从 &lt;a href="https://github.com/janl/mustache.js" title="mustache.js模板"&gt;mustache.js&lt;/a&gt; 这个前端模板的设计上我们也能感受到这一点。&lt;br/&gt;
+现在的前端模板非常多，目前最经常被使用的是&lt;a href="http://handlebarsjs.com" title="handlerbars模板"&gt;handlebars&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;很多模板思路是在HTML文件中插入一个标签，比如&lt;code&gt;pre&lt;/code&gt;或者&lt;code&gt;script&lt;/code&gt;并将type设置成其他不可解析的，然后从中获取到HTML再进行解析。这种做法有几点不好：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;强制混入到页面中，有些模板是多个页面公用的，造成代码的重复和多方维护  &lt;/li&gt;
+&lt;li&gt;每次都从DOM获取HTML，再解析，性能上不好&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://handlebarsjs.com" title="handlerbars模板"&gt;handlebars&lt;/a&gt;支持这种方式，也支持预编译方式： &lt;a href="http://handlebarsjs.com/precompilation.html" title="handlerbars预编译"&gt;传送门&lt;/a&gt;。预编译就是提前将HTML模板编译成javascript，可以直接调用。&lt;br/&gt;
+&lt;a href="https://github.com/caolvchong/gazira" title="a javascript library for web develop"&gt;gazira&lt;/a&gt; 中采用了自己的一套模板方式&lt;a href="https://github.com/caolvchong/tpl" title="gazira模板工具"&gt;tpl&lt;/a&gt;，使用预编译方式，将模板编译成支持&lt;a href="http://seajs.org/" title="javascript模块化开发工具"&gt;seajs&lt;/a&gt;的模块，直接require使用即可。&lt;/p&gt;
+&lt;h2 id="gazira"&gt;gazira中的模板&lt;/h2&gt;
+&lt;h3 id="_3"&gt;安装&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/caolvchong/tpl" title="gazira模板工具"&gt;tpl&lt;/a&gt;已经是npm下的一个包，安装命令：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;npm install tpl2js -g
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="_4"&gt;编译&lt;/h3&gt;
+&lt;p&gt;直接编写HTML，再使用编译命令进行编译：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;tpl 模板文件 &lt;span class="o"&gt;[&lt;/span&gt;目标文件&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; --fn name&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; --charset charset&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;注意：
++ 模板文件必须存在
++ 目标文件如果没有输入，则在模板文件的同目录下生成同名，以tpl.js结尾的文件
++ --fn 指定输出为普通的function结构，把结果返回给name，不指定--fn默认将输出支持seajs的结构
++ --charset指定文件的编码，默认UTF-8，非UTF-8时候需要指定，防止乱码&lt;/p&gt;
+&lt;h3 id="_5"&gt;语法&lt;/h3&gt;
+&lt;p&gt;模板中支持简单的逻辑语法，使用两对换括号包裹起来 {{  }}&lt;/p&gt;
+&lt;h4 id="_6"&gt;变量&lt;/h4&gt;
+&lt;p&gt;变量和表达式都可以使用&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;{{param}}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_7"&gt;条件判断&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;else if&lt;/code&gt; 和 &lt;code&gt;else&lt;/code&gt; 是可选的&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;{{if(...)}}
+    ...
+{{else if(...)}}
+    ...
+{{else}}
+    ...
+{{endif}}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_8"&gt;循环遍历&lt;/h4&gt;
+&lt;p&gt;循环一个数组，start、end、reverse、step可选&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;{{for data=数据list key=索引 item=元 start=起始索引 end=结束索引 reverse=是否逆序 step=步长}}
+    ...
+{{endfor}}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其中，可选变量有以下默认值：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;key: _key
+item: _item
+start: 0, reverse为true时为 list.length - 1
+end: list.length - 1, reverse为true时为 0
+reverse: false
+step: 1
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;循环一个对象，object标识这是对象遍历&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;{{for data=数据list key=键 item=值 object=1}}
+    ...
+{{endfor}}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_9"&gt;注释&lt;/h4&gt;
+&lt;p&gt;所有注释在编译的文件中不存在&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;!-- 单行注释 --&amp;gt;
+
+&amp;lt;!--
+    多行注释
+    多行注释
+--&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id="_10"&gt;其他&lt;/h4&gt;
+&lt;p&gt;模板允许直接执行javascript代码，尽量少用，以便减少逻辑代码。一般用来模板中的一些调试。&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;{{eval console.log('something')}}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="_11"&gt;使用模板&lt;/h3&gt;
+&lt;p&gt;编译生成的js文件，都提供了一个render方法，该方法接受一个JSON参数作为数据源，返回结果是一个HTML字符串。&lt;/p&gt;
+&lt;p&gt;seajs方式&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tpl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'path/to/template'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;tpl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;render&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;普通function方式
+例如使用以下编译方式：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;tpl hello.html --fn my.tpl.hello
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;生成模板hello.tpl.js。引入该js后可以使用：(需要事先有my.tpl这个命名空间，可以自定义)&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;my&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;tpl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;render&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;或者自己将其复制到任意的地方来使用&lt;/p&gt;
+&lt;h3 id="_12"&gt;子模板&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/caolvchong/tpl" title="gazira模板工具"&gt;tpl&lt;/a&gt; 没有提供子模板功能，如果一个模板中需要调用其他模板，可以使用变量方式：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;mainTpl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'./main'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;itemTpl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'./item'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;mainTpl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;render&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+    &lt;span class="nx"&gt;itemTpl&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;itemTpl&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="nx"&gt;otherData&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id="_13"&gt;例子&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nx"&gt;define&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;exports&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;module&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'$'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tpl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'./tpl'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#btn'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#tpl-box'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;tpl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;render&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+                &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'关系'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'李四'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                &lt;span class="nx"&gt;sex&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                &lt;span class="nx"&gt;friendList&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[{&lt;/span&gt;
+                    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'张三'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                    &lt;span class="nx"&gt;sex&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+                &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'王五'&lt;/span&gt;
+                &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'钱七'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                    &lt;span class="nx"&gt;sex&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+                &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'孙二'&lt;/span&gt;
+                &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'陈八'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                    &lt;span class="nx"&gt;sex&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+                &lt;span class="p"&gt;}],&lt;/span&gt;
+                &lt;span class="nx"&gt;info&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                    &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'王八'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                    &lt;span class="nx"&gt;age&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;28&lt;/span&gt;
+                &lt;span class="p"&gt;}&lt;/span&gt;
+            &lt;span class="p"&gt;}))&lt;/span&gt;
+        &lt;span class="p"&gt;});&lt;/span&gt;
+    &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="javascript"></category><category term="template"></category></entry><entry><title>为什么不能这么继承</title><link href="http://tomjoke.com/why%20can%20not%20inherit%20like%20this.html" rel="alternate"></link><updated>2012-06-08T00:00:00+08:00</updated><author><name>Tom</name></author><id>tag:tomjoke.com,2012-06-08:why can not inherit like this.html</id><summary type="html">
+&lt;h2 id="_1"&gt;传统原型继承方式&lt;/h2&gt;
+&lt;p&gt;且看代码：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt; * 父类&lt;/span&gt;
+&lt;span class="cm"&gt; */&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;P&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt; * 子类&lt;/span&gt;
+&lt;span class="cm"&gt; */&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;F&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{};&lt;/span&gt;
+&lt;span class="nx"&gt;F&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;F&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;constructor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="_2"&gt;一个封装的疑问&lt;/h2&gt;
+&lt;p&gt;前一段一同事讨论问题时候，问到javascript继承用下面的方式为什么得不到预期：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;F&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{};&lt;/span&gt;
+    &lt;span class="nx"&gt;F&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;F&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;constructor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;他希望构造器和原型链可以放在一个地方继承，但是按上面的写法，下面的调用会有问题：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;s1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;s1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 报错&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;s1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;s1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="_3"&gt;原因分析&lt;/h2&gt;
+&lt;p&gt;本质原因是new机制导致，ECMA-262 5th 规范：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;13.2.2 [[Construct]]&lt;br/&gt;
+When the [[Construct]] property for a Function object F is called, the following steps are taken:&lt;br/&gt;
+1.Create a new native ECMAScript object.&lt;br/&gt;
+2.Set the [[Class]] property of Result(1) to "Object".&lt;br/&gt;
+3.Get the value of the prototype property of the F.&lt;br/&gt;
+4.If Result(3) is an object, set the [[Prototype]] property of Result(1) to Result(3).&lt;br/&gt;
+5.If Result(3) is not an object, set the [[Prototype]] property of Result(1) to the original Object prototype object as described in 15.2.3.1.&lt;br/&gt;
+6.Invoke the [[Call]] property of F, providing Result(1) as the this value and providing the argument list passed into [[Construct]] as the argument values.&lt;br/&gt;
+7.If Type(Result(6)) is Object then return Result(6).&lt;br/&gt;
+8.Return Result(1).  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第一次执行 new S(1, 2, 3) 在规范中的相关过程描述为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;obj = new Object()&lt;/li&gt;
+&lt;li&gt;obj[[Prototype]] = S.prototype，可以看的出来S.prototype不存在，规范则将其指向 new Object()&lt;/li&gt;
+&lt;li&gt;S.call(obj, 1, 2, 3)，将obj作为this执行S函数，此时将会执行到 S.prototype = new F()，为第二次new准备了原型链&lt;/li&gt;
+&lt;li&gt;返回obj，因此obj[[Prototype]]是个空的obj，没有get方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;而第二次执行 new S(1, 2, 3)，由于第一次的 S.prototype = new F() 的赋值，obj[[Prototype]]将等于P.prototype
+因此第二次具备了get方法&lt;/p&gt;
+&lt;h2 id="_4"&gt;实现需求的方案&lt;/h2&gt;
+&lt;p&gt;上述需求是想让 new S的同时，让对象从父对象P上得到原型链。new的原型继承无法做到，可以通过原型拷贝的方式实现&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;method&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;// 原型链拷贝&lt;/span&gt;
+        &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;method&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;method&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;s1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nx"&gt;s1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 2&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;当然，可以做一个简单的封装&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;extend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;superClass&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;subClass&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;scope&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+     &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;method&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;superClass&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;// 原型链拷贝&lt;/span&gt;
+         &lt;span class="nx"&gt;subClass&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;method&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;superClass&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;method&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+     &lt;span class="p"&gt;}&lt;/span&gt;
+     &lt;span class="nx"&gt;superClass&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;scope&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;Array&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt; &lt;span class="c1"&gt;// 构造器继承&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;extend&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;P&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;S&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;原型链拷贝方式还有个优势，多继承，这是原型链继承方式所不能做到的。&lt;/p&gt;</summary><category term="javascript"></category></entry><entry><title>javascript中的一个scope例子分析</title><link href="http://tomjoke.com/use%20a%20example%20to%20explain%20scope%20in%20javascript.html" rel="alternate"></link><updated>2009-04-11T00:00:00+08:00</updated><author><name>Tom</name></author><id>tag:tomjoke.com,2009-04-11:use a example to explain scope in javascript.html</id><summary type="html">&lt;p&gt;代码是这样的（在运行代码前写出控制台打印的内容）：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;closure&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;v1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;v1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;v2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;v2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;add1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;v1&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-add1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;v2&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-add1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;v1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;v2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;add2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nx"&gt;v1&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-add2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;v2&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-add2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;v1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+        &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;v2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="nx"&gt;add1&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="nx"&gt;add2&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="nx"&gt;closure&lt;/span&gt; &lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;---&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;closure&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;下面开始分析过程：&lt;/p&gt;
+&lt;p&gt;执行closure()，其中的this将指向window，这点在规范（ECMA-262 5th）中提到：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;10.4.3 Entering Function Code
+2.Else if thisArg is null or undefined, set the ThisBinding to the global object.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;浏览器中的global object为window，因此进入closure函数体后，window上将增加&lt;code&gt;v2变量&lt;/code&gt;与&lt;code&gt;add2方法&lt;/code&gt;，即&lt;code&gt;window.v2&lt;/code&gt;与&lt;code&gt;window.add2&lt;/code&gt;。&lt;br /&gt;
+注意的是window.add2是在closure内部声明的，它可以访问得到closure的私有变量。&lt;br /&gt;
+大致执行过程为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;私有变量v1赋值为 'v1'&lt;/li&gt;
+&lt;li&gt;window.v2赋值为 'v2'&lt;/li&gt;
+&lt;li&gt;进入add1函数体：v1 = 'v1-add1'；v2当前作用域中没有找到，向上找到window.v2，处理为 window.v2 = 'v2-add1'。打印&lt;/li&gt;
+&lt;li&gt;进入add2函数体（同样add2在当前作用域中没有找到，向上找到window.add2）：v1 = 'v1-add1-add2'，window.v2 = 'v2-add1-add2'。打印&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因此输出结果为：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;v1-add1
+v2-add1
+v1-add1-add2
+v2-add1-add2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然后执行 new closure()，此时this将指向对象实例，大致执行过程为：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;私有变量v1赋值为 'v1'&lt;/li&gt;
+&lt;li&gt;成员变量v2赋值为 'v2'，即 this.v2 = 'v2'&lt;/li&gt;
+&lt;li&gt;进入add1函数体：v1 = 'v1-add1'；v2（注意不是this.v2）当前作用域中没有找到，向上找到window.v2（此时值为上次执行的结果'v2-add1-add2'），处理为 window.v2 = 'v2-add1-add2-add1'。打印&lt;/li&gt;
+&lt;li&gt;进入add2函数体（注意不是this.add2，add2在当前作用域中没有找到，向上找到window.add2）：&lt;br /&gt;
+   v1 = 'v1-add1-add2-add2'，这里的v1是上次closure()执行后的（值为 'v1-add1-add2'），因为window.add2上在那里声明的&lt;br /&gt;
+   v2 则继续访问到window.v2，处理为 window.v2 = 'v2-add1-add2-add1-add2'&lt;br /&gt;
+   打印&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因此输出结果为：&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;v1-add1
+v2-add1-add2-add1
+v1-add1-add2-add2
+v2-add1-add2-add1-add2
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="javascript"></category></entry></feed>

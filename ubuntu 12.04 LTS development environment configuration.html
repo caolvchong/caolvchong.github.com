@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ubuntu 12.04 LTS 配备 - Tom's blog </title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="author" content="Tom"/>
+    <link rel="shortcut icon" href="http://tomjoke.com/static/images/favicon.gif" />
+
+    <link href="http://tomjoke.com/feeds/all.atom.xml" rel="alternate" title="Atom Rss" type="application/atom+xml" />
+
+    <link href="http://tomjoke.com/static/themes/default/css/base.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="http://tomjoke.com/static/themes/default/css/article.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://tomjoke.com/static/js/html5shiv.js"></script>
+    <script src="http://tomjoke.com/static/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="http://tomjoke.com/static/js/seajs/sea.js?_v=0.0.1"></script>
+    <script src="http://tomjoke.com/static/js/config.js?_v=0.0.1"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="/" title="Tom's blog">Tom</a></div>
+    <nav>
+        <ul>
+            <li><a href="/" title="首页" class=""><i class="fa fa-home fa-fw"></i>首页</a></li>
+            <li><a href="http://tomjoke.com/archives.html" title="归档" class=""><i class="fa fa-archive fa-fw"></i>归档</a></li>
+            <li><a href="http://tomjoke.com/about.html" title="关于" class=""><i class="fa fa-user-md fa-fw"></i>关于</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main">
+    <aside class="left">
+        <section class="introduce">
+            <img src="http://tomjoke.com/static/images/avatar.jpg" alt="头像"/>
+
+            <div class="nick"><span>Tom</span></div>
+            <p>小时候理想是成为生物学家、作家、足球运动员，现在是一名前端工程师。</p>
+            <address>
+                <details open="open">
+                    <summary>联系方式</summary>
+                    <ul>
+                        <li><i class="fa fa-envelope"></i> caolvchong[at]gmail.com</li>
+                        <li><i class="fa fa-github"></i> <a href="https://github.com/caolvchong" title="草履虫的github">github.com/caolvchong</a></li>
+                        <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/caolvchong" title="草履虫的twitter">twitter.com/caolvchong</a></li>
+                        <li><i class="fa fa-weibo"></i> <a href="http://ecma.weibo.com" title="草履虫的微博">ecma.weibo.com</a></li>
+                        <li><i class="fa fa-home"></i> <a href="http://caolvchong.github.com" title="Tom's blog">caolvchong.github.com</a></li>
+                    </ul>
+                </details>
+            </address>
+        </section>
+    </aside>
+
+    <div class="center">
+<article>
+    <div class="article">
+        <h1 class="head-title title"><i class="fa fa-pagelines"></i> <a href="http://tomjoke.com/ubuntu 12.04 LTS development environment configuration.html">ubuntu 12.04 LTS 配备</a></h1>
+        <div class="article-info">
+            <time><i class="fa fa-calendar"></i> 2014-02-09</time>
+            <span class="article-tags"><i class="fa fa-tags"></i> <a href="tag/ubuntu.html">Ubuntu</a></span>
+        </div>
+        <nav class="article-nav">
+            <div>目录</div>
+            <div class="toc">
+<ul>
+<li><a href="#_1">系统安装</a><ul>
+<li><a href="#grub4dos">grub4dos安装</a></li>
+<li><a href="#iso">iso文件准备</a></li>
+<li><a href="#_2">安装注意事项</a></li>
+</ul>
+</li>
+<li><a href="#_3">系统配置</a><ul>
+<li><a href="#_4">常用目录结构</a></li>
+<li><a href="#_5">输入法</a></li>
+<li><a href="#_6">软件源</a></li>
+<li><a href="#_7">中文支持</a></li>
+<li><a href="#_8">显卡驱动</a></li>
+<li><a href="#_9">一些所需环境支持</a></li>
+</ul>
+</li>
+<li><a href="#_10">系统软件</a><ul>
+<li><a href="#gnome">gnome环境</a></li>
+<li><a href="#_11">便签</a></li>
+<li><a href="#_12">控制台增强</a></li>
+<li><a href="#markdown">markdown</a></li>
+<li><a href="#vim">vim</a></li>
+<li><a href="#flash">flash</a></li>
+<li><a href="#chrome">chrome</a></li>
+<li><a href="#firefox">firefox更新到最新版本</a></li>
+<li><a href="#virtualbox">virtualbox 虚拟机</a></li>
+<li><a href="#rar">rar</a></li>
+</ul>
+</li>
+<li><a href="#_13">开发环境</a><ul>
+<li><a href="#_14">版本管理</a></li>
+<li><a href="#java">java环境</a></li>
+<li><a href="#web">web服务器</a></li>
+<li><a href="#node">node环境</a></li>
+<li><a href="#python">python环境</a></li>
+<li><a href="#ruby">ruby环境</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </nav>
+        <div class="article-content">
+<h2 id="_1">系统安装</h2>
+<p>从windows安装，这里是以XP为例</p>
+<h3 id="grub4dos">grub4dos安装</h3>
+<p>下载grub4dos，解压后将 grldr，menu.lst，grldr.mbr，grub.exe 放到系统盘根目录</p>
+<h3 id="iso">iso文件准备</h3>
+<p>下载 ubuntu12.04的iso文件，将iso放到系统盘跟目录，并将其中的</p>
+<ul>
+<li>casper文件夹下面的vmlinuz和initrd.lz</li>
+<li>.disk文件夹</li>
+</ul>
+<p>提取到系统盘跟目录。然后修改menu.lst，在其末尾增加</p>
+<div class="codehilite"><pre>title Install Ubuntu12.04
+root (hd0,0)
+kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-12.04-desktop-i386.iso locale=zh_CN.UTF-8
+initrd (hd0,0)/initrd.lz
+</pre></div>
+<p>hd(x,y) 表示第x块硬盘的第y个分区，x、y都是从0开始，例如：
+只有一块硬盘，主分区在C盘，则用hd(0, 0)表示</p>
+<p>修改系统盘跟目录下的系统隐藏文件boot.ini，在文件最后添加如下内容</p>
+<div class="codehilite"><pre>c:\grldr=”Ubuntu Install”
+</pre></div>
+<p>以增加grub启动</p>
+<h3 id="_2">安装注意事项</h3>
+<p>通过grub引导进入ubuntu安装界面后，注意下列以下事项：
++ 断网，避免安装过程中去网络下载导致安装非常久。
++ 同时卸载isodevice：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo umount -l /isodevice
+</pre></div>
+<h2 id="_3">系统配置</h2>
+<h3 id="_4">常用目录结构</h3>
+<p>在/home/tom/下建立 workspace、book、temp、software目录
+同时将 桌面、文档、下载 软链接为 desktop、docs、download</p>
+<h3 id="_5">输入法</h3>
+<p>默认ibus输入法翻页不能用 +/-，执行</p>
+<div class="codehilite"><pre><span class="nv">$ </span>/usr/lib/ibus-sunpinyin/ibus-setup-sunpinyin
+</pre></div>
+<p>调出sunpinyin设置面板，选keyboard - page flip，勾选 -/= 即可</p>
+<h3 id="_6">软件源</h3>
+<p>软件中心 - 编辑 - 软件源 - 下载自：其他站点 - 选择最佳服务器
+得到最佳服务器或执行</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get update
+</pre></div>
+<h3 id="_7">中文支持</h3>
+<p>系统设置 - 语言支持，然后会自动提示安装</p>
+<h3 id="_8">显卡驱动</h3>
+<p>系统设置 - 附加驱动，然后会自动提示激活安装驱动</p>
+<h3 id="_9">一些所需环境支持</h3>
+<p>CURL</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install curl
+</pre></div>
+<p>SSL</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install libssl-dev
+</pre></div>
+<p>bz2</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install libbz2-dev
+</pre></div>
+<h2 id="_10">系统软件</h2>
+<h3 id="gnome">gnome环境</h3>
+<p>使用gnome-shell，安装需要执行以下命令：</p>
+<p>首先添加PPA</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo add-apt-repository ppa:gnome3-team/gnome3
+<span class="nv">$ </span>sudo add-apt-repository ppa:ricotz/testing
+</pre></div>
+<p>然后安装</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get update
+<span class="nv">$ </span>sudo apt-get install gnome-shell <span class="c"># 安装Gnome-shell 桌面</span>
+<span class="nv">$ </span>sudo apt-get install gnome-shell-extensions <span class="c"># 安装extensions</span>
+<span class="nv">$ </span>sudo apt-get install gnome-tweak-tool <span class="c"># 安装配置工具</span>
+</pre></div>
+<p>有可能ubuntu桌面无法右键，并且没有图标，可以使用 gnome-tweak 进行设置：桌面 - 由文件管理器处理桌面</p>
+<h3 id="_11">便签</h3>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install tomboy
+</pre></div>
+<h3 id="_12">控制台增强</h3>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install terminator
+</pre></div>
+<h3 id="markdown">markdown</h3>
+<p>使用 <a href="http://dillinger.io">dillinger 在线编辑器</a> ，支持localstorage保存，实时预览，从github、dropbox、google drive导入</p>
+<h3 id="vim">vim</h3>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install vim
+</pre></div>
+<h3 id="flash">flash</h3>
+<p>软件中心 - 搜索flash，进行安装。或者：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install flashplugin-installer
+</pre></div>
+<h3 id="chrome">chrome</h3>
+<p>访问 <a href="http://www.google.com/intl/zh-CN/chrome">chrome下载地址</a>，下载对应版本安装即可</p>
+<h3 id="firefox">firefox更新到最新版本</h3>
+<p>从 <a href="http://firefox.com.cn/download/">firefox下载地址</a> 下载最新版本firefox，解压即可使用。我解压到 /home/tom/software/firefox下
+删除旧版本firefox</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get remove firefox
+</pre></div>
+<p>添加命令快捷方式</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo ln -s /home/tom/software/firefox/firefox /usr/bin/firefox
+</pre></div>
+<p>添加菜单快捷方式：
+应用程序 - 系统工具 - 首选项 - 主菜单 - 互联网 - 新建项目
+然后选择firefox即可</p>
+<p>firefox常用插件：</p>
+<ul>
+<li>firebug</li>
+<li>firestorage plus</li>
+<li>firesass</li>
+<li>web developer</li>
+<li>yeslow</li>
+<li>firegestures</li>
+<li>greasemonkey</li>
+<li>autoproxy</li>
+<li>speed dail</li>
+</ul>
+<h3 id="virtualbox">virtualbox 虚拟机</h3>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install virtualbox-ose
+</pre></div>
+<p>然后下载自己需要的iso装机</p>
+<h3 id="rar">rar</h3>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install rar
+<span class="nv">$ </span>sudo apt-get install unrar
+</pre></div>
+<h2 id="_13">开发环境</h2>
+<h3 id="_14">版本管理</h3>
+<p>git</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install git-core
+</pre></div>
+<p>svn</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install subversion
+</pre></div>
+<h3 id="java">java环境</h3>
+<p>从 <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">oracle java下载地址</a> 下载自己系统所需版本，解压。解压目录记作 JAVA_PATH
+在<code>/etc/profile</code>文件末尾增加一下内容：</p>
+<div class="codehilite"><pre><span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span>JAVA_PATH
+<span class="nb">export </span><span class="nv">JRE_HOME</span><span class="o">=</span>JAVA_PATH/jre
+<span class="nb">export </span><span class="nv">CLASSPATH</span><span class="o">=</span>.:<span class="nv">$JAVA_HOME</span>/lib/dt.jar:<span class="nv">$JAVA_HOME</span>/lib/tools.jar:<span class="nv">$JAVA_HOME</span>/lib:<span class="nv">$JRE_HOME</span>/lib:<span class="nv">$CLASSPATH</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$JAVA_HOME</span>/bin:<span class="nv">$PATH</span>
+</pre></div>
+<p>上面的JAVA_PATH需要修改为刚才jdk的解压路径。执行：</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">source</span> /etc/profile
+</pre></div>
+<p>让刚才的配置生效。然后执行以下命令进行配置：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo update-alternatives --install <span class="s2">"/usr/bin/java"</span> <span class="s2">"java"</span> <span class="s2">"JAVA_PATH/bin/java"</span> 300
+<span class="nv">$ </span>sudo update-alternatives --install <span class="s2">"/usr/bin/javac"</span> <span class="s2">"javac"</span> <span class="s2">"JAVA_PATH/bin/javac"</span> 300
+<span class="nv">$ </span>sudo update-alternatives --install <span class="s2">"/usr/bin/javaws"</span> <span class="s2">"javaws"</span> <span class="s2">"JAVA_PATH/bin/javaws"</span> 300
+<span class="nv">$ </span>sudo update-alternatives --config java
+<span class="nv">$ </span>sudo update-alternatives --config javac
+<span class="nv">$ </span>sudo update-alternatives --config javaws
+</pre></div>
+<p>同样，需要将上面的JAVA_PATH需要修改为刚才jdk的解压路径。</p>
+<p>执行</p>
+<div class="codehilite"><pre><span class="nv">$ </span>java -version
+</pre></div>
+<p>查看java环境是否安装成功。</p>
+<h3 id="web">web服务器</h3>
+<p>nginx</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install nginx
+</pre></div>
+<p>php &amp; mysql</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sudo apt-get install php5-cli php5-cgi mysql-server php5-mysql
+<span class="nv">$ </span>sudo apt-get install spawn-fcgi
+<span class="nv">$ </span>spawn-fcgi -a 127.0.0.1 -p 9000 -C 10 -u www-data -f /usr/bin/php-cgi
+</pre></div>
+<p>同时，将fastcgi启动加入系统启动，编辑 <code>/etc/rc.local</code>，在 <code>exit 0</code> 前面添加：</p>
+<div class="codehilite"><pre>spawn-fcgi -a 127.0.0.1 -p 9000 -C 10 -u www-data -f /usr/bin/php-cgi
+</pre></div>
+<p>下面是nginx支持虚拟主机的一份简要配置：</p>
+<div class="codehilite"><pre><span class="c1"># workspace，使用localhost</span>
+<span class="k">server</span> <span class="p">{</span>
+    <span class="kn">listen</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">80</span><span class="p">;</span>
+
+    <span class="kn">root</span> <span class="s">/home/tom/workspace</span><span class="p">;</span>
+    <span class="kn">index</span> <span class="s">index.php</span> <span class="s">index.html</span> <span class="s">index.htm</span><span class="p">;</span>
+    <span class="kn">server_name</span> <span class="s">localhost</span><span class="p">;</span>
+    <span class="kn">autoindex</span> <span class="no">on</span><span class="p">;</span>
+    <span class="kn">autoindex_exact_size</span> <span class="no">off</span><span class="p">;</span>
+    <span class="kn">autoindex_localtime</span>  <span class="no">on</span><span class="p">;</span>
+
+    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+            <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.html</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kn">location</span> <span class="s">/doc/</span> <span class="p">{</span>
+            <span class="kn">alias</span> <span class="s">/usr/share/doc/</span><span class="p">;</span>
+            <span class="kn">autoindex</span> <span class="no">on</span><span class="p">;</span>
+            <span class="kn">allow</span> <span class="mi">127</span><span class="s">.0.0.1</span><span class="p">;</span>
+            <span class="kn">deny</span> <span class="s">all</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.php$</span> <span class="p">{</span>
+            <span class="kn">include</span> <span class="s">/etc/nginx/fastcgi_params</span><span class="p">;</span> <span class="c1">#需放在第一行，否则会出错</span>
+            <span class="kn">fastcgi_pass</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">9000</span><span class="p">;</span>
+            <span class="kn">fastcgi_index</span> <span class="s">index.php</span><span class="p">;</span>
+            <span class="kn">fastcgi_param</span> <span class="s">SCRIPT_FILENAME</span> <span class="s">/home/tom/workspace</span><span class="nv">$fastcgi_script_name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># 虚拟主机：greasemonkey</span>
+<span class="k">server</span> <span class="p">{</span>
+        <span class="kn">listen</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">80</span><span class="p">;</span>
+
+        <span class="kn">root</span> <span class="s">/home/tom/workspace/gm_sources</span><span class="p">;</span>
+        <span class="kn">index</span> <span class="s">index.html</span> <span class="s">index.htm</span><span class="p">;</span>
+        <span class="kn">server_name</span> <span class="s">gm.me</span><span class="p">;</span>
+        <span class="kn">autoindex</span> <span class="no">on</span><span class="p">;</span>
+        <span class="kn">autoindex_exact_size</span> <span class="no">off</span><span class="p">;</span>
+        <span class="kn">autoindex_localtime</span>  <span class="no">on</span><span class="p">;</span>
+
+        <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+                <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.html</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="kn">location</span> <span class="s">/doc/</span> <span class="p">{</span>
+                <span class="kn">alias</span> <span class="s">/usr/share/doc/</span><span class="p">;</span>
+                <span class="kn">autoindex</span> <span class="no">on</span><span class="p">;</span>
+                <span class="kn">allow</span> <span class="mi">127</span><span class="s">.0.0.1</span><span class="p">;</span>
+                <span class="kn">deny</span> <span class="s">all</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<h3 id="node">node环境</h3>
+<p>使用nvm来版本管理node：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>git clone git://github.com/creationix/nvm.git ~/.nvm
+</pre></div>
+<p>加入环境变量，并刷新：</p>
+<div class="codehilite"><pre><span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'. $HOME/.nvm/nvm.sh'</span> &gt;&gt; ~/.bashrc 
+<span class="nv">$ </span>. ~/.bashrc
+</pre></div>
+<p>查看node可用版本：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>nvm ls-remote
+</pre></div>
+<p>比如当前最新版本为 v0.11.11，进行安装：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>nvm install v0.11.11
+</pre></div>
+<p>nvm其他常用使用为：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>nvm use v0.11.11 <span class="c"># 使用0.11.11为当前shell的node版本，对其他shell是无效的</span>
+<span class="nv">$ </span>nvm <span class="nb">alias </span>default v0.11.11 <span class="c"># 将v0.11.11设置为默认的node版本</span>
+<span class="nv">$ </span>nvm ls <span class="c"># 查看当前系统安装的node所有版本</span>
+</pre></div>
+<p>node 一些常用全局插件</p>
+<div class="codehilite"><pre><span class="nv">$ </span>npm install grunt-cli -g
+<span class="nv">$ </span>npm install tpl2js
+</pre></div>
+<h3 id="python">python环境</h3>
+<p>使用pythonbrew管理python：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>curl -kL http://xrl.us/pythonbrewinstall | bash
+</pre></div>
+<p>pythonbrew就会安装到 ~/.pythonbrew，然后设置环境变量：
+在~/.bashhrc 文件追加下面这一行</p>
+<div class="codehilite"><pre><span class="o">[[</span> -s <span class="nv">$HOME</span>/.pythonbrew/etc/bashrc <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="nv">$HOME</span>/.pythonbrew/etc/bashrc
+</pre></div>
+<p>查看可用python版本：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>pythonbrew list -k
+</pre></div>
+<p>安装某个版本：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>pythonbrew install 2.7.5
+</pre></div>
+<p>pythonbrew其他常用命令：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>pythonbrew switch 2.7.2 <span class="c"># 使用某个版本的python，多个shell之间永久存在</span>
+<span class="nv">$ </span>pythonbrew use 2.7.2 <span class="c"># 仅在当前shell中使用某个版本的python</span>
+<span class="nv">$ </span>pythonbrew list <span class="c"># 罗列系统中已经安装的python</span>
+<span class="nv">$ </span>pythonbrew uninstall 2.7.2 <span class="c"># 卸载某个版本的python</span>
+<span class="nv">$ </span>pythonbrew update --master <span class="c"># 升级pythonbrew到最新版本</span>
+</pre></div>
+<p>在pythonbrew使用virtualenv：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>pythonbrew venv init <span class="c"># 初始化安装virtualenv</span>
+<span class="nv">$ </span>pythonbrew venv create proj <span class="c"># 创建某个隔离环境</span>
+<span class="nv">$ </span>pythonbrew venv list <span class="c"># 罗列当前创建的所有隔离环境</span>
+<span class="nv">$ </span>pythonbrew venv use proj <span class="c"># 进入并使用某个隔离环境</span>
+<span class="nv">$ </span>pythonbrew venv delete proj <span class="c"># 删除某个隔离环境</span>
+<span class="nv">$ </span>pythonbrew venv rename proj proj2 <span class="c"># 重命名某个隔离环境</span>
+</pre></div>
+<h3 id="ruby">ruby环境</h3>
+<p>使用rvm管理ruby：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>curl -L get.rvm.io | bash -s stable
+<span class="nv">$ </span><span class="nb">source</span> ~/.bashrc
+<span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</pre></div>
+<p>修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，这样能提高安装速度</p>
+<div class="codehilite"><pre><span class="nv">$ </span>sed -i -e <span class="s1">'s/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g'</span> ~/.rvm/config/db
+</pre></div>
+<p>列出已知的ruby版本</p>
+<div class="codehilite"><pre><span class="nv">$ </span>rvm list known
+</pre></div>
+<p>安装某个版本，例如：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>rvm install 2.1.0
+</pre></div>
+<p>如果 rvm use 出现错误，提示 <code>RVM is not a function</code>，可以尝试将下面这行添加到 .bashrc 中</p>
+<div class="codehilite"><pre>[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+</pre></div>
+<p>更多的详细信息可以参考 <a href="http://www.reyesyang.info/articles/27-install-rvm-step-by-step-and-why-rvm-is-not-a-function">手把手安装RVM以及为什么RVM is not a function</a></p>
+<p>rvm其他常用命令：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>rvm use 1.9.3 <span class="c"># 使用一个ruby版本</span>
+<span class="nv">$ </span>rvm use 1.9.3 --default  <span class="c"># 设置为默认版本</span>
+<span class="nv">$ </span>rvm list <span class="c"># 查询已经安装的ruby</span>
+<span class="nv">$ </span>rvm remove 1.9.2 <span class="c"># 卸载一个已安装版本</span>
+</pre></div>
+<p>安装sass：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>gem install sass
+</pre></div></div>
+
+<blockquote class="article-copyright">
+    <ul>
+        <li>作者：<a href="http://tomjoke.com/about.html" title="Tom">Tom</a></li>
+        <li>原文：<a href="ubuntu 12.04 LTS development environment configuration.html" title="ubuntu 12.04 LTS 配备">ubuntu 12.04 LTS 配备</a></li>
+        <li>本文允许任意转载，但必须以链接形式注明作者和原文出处，并给出本声明</li>
+    </ul>
+</blockquote>    </div>
+
+    <div class="article-bar">
+        <ul class="article-neighbors">
+            <li class="prev">
+                上一篇：
+                <a href="http://tomjoke.com/template in javascript.html" title="javascript中的模板">javascript中的模板</a>
+            </li>
+
+            <li class="prev">
+                下一篇：
+                <a href="http://tomjoke.com/in the days of ND.html" title="在ND的日子">在ND的日子</a>
+            </li>
+        </ul>
+    </div>
+
+</article>
+
+<div class="ds-thread"></div>
+<script>
+    var duoshuoQuery = {short_name:"tomblog"};
+    seajs.use('http://static.duoshuo.com/embed.js');
+</script>    </div>
+
+
+    <aside class="right">
+        <section class="copyright">
+            Copyright &copy; 2014 Tom's blog. All Rights Reserved.
+        </section>
+    </aside>
+
+</div>
+
+<script>seajs.use('dist/app/article/index.js');</script>
+<script>
+    seajs.use('http://hm.baidu.com/h.js?b2b69380aee7d3c9db345aa8eb2eb90c');
+</script></body>
+</html>

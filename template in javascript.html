@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript中的模板 - Tom's blog </title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="author" content="Tom"/>
+    <link rel="shortcut icon" href="http://tomjoke.com/static/images/favicon.gif" />
+
+    <link href="http://tomjoke.com/feeds/all.atom.xml" rel="alternate" title="Atom Rss" type="application/atom+xml" />
+
+    <link href="http://tomjoke.com/static/themes/default/css/base.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="http://tomjoke.com/static/themes/default/css/article.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://tomjoke.com/static/js/html5shiv.js"></script>
+    <script src="http://tomjoke.com/static/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="http://tomjoke.com/static/js/seajs/sea.js?_v=0.0.1"></script>
+    <script src="http://tomjoke.com/static/js/config.js?_v=0.0.1"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="/" title="Tom's blog">Tom</a></div>
+    <nav>
+        <ul>
+            <li><a href="/" title="首页" class=""><i class="fa fa-home fa-fw"></i>首页</a></li>
+            <li><a href="http://tomjoke.com/archives.html" title="归档" class=""><i class="fa fa-archive fa-fw"></i>归档</a></li>
+            <li><a href="http://tomjoke.com/about.html" title="关于" class=""><i class="fa fa-user-md fa-fw"></i>关于</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main">
+    <aside class="left">
+        <section class="introduce">
+            <img src="http://tomjoke.com/static/images/avatar.jpg" alt="头像"/>
+
+            <div class="nick"><span>Tom</span></div>
+            <p>小时候理想是成为生物学家、作家、足球运动员，现在是一名前端工程师。</p>
+            <address>
+                <details open="open">
+                    <summary>联系方式</summary>
+                    <ul>
+                        <li><i class="fa fa-envelope"></i> caolvchong[at]gmail.com</li>
+                        <li><i class="fa fa-github"></i> <a href="https://github.com/caolvchong" title="草履虫的github">github.com/caolvchong</a></li>
+                        <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/caolvchong" title="草履虫的twitter">twitter.com/caolvchong</a></li>
+                        <li><i class="fa fa-weibo"></i> <a href="http://ecma.weibo.com" title="草履虫的微博">ecma.weibo.com</a></li>
+                        <li><i class="fa fa-home"></i> <a href="http://caolvchong.github.com" title="Tom's blog">caolvchong.github.com</a></li>
+                    </ul>
+                </details>
+            </address>
+        </section>
+    </aside>
+
+    <div class="center">
+<article>
+    <div class="article">
+        <h1 class="head-title title"><i class="fa fa-pagelines"></i> <a href="http://tomjoke.com/template in javascript.html">javascript中的模板</a></h1>
+        <div class="article-info">
+            <time><i class="fa fa-calendar"></i> 2013-08-23</time>
+            <span class="article-tags"><i class="fa fa-tags"></i> <a href="tag/javascript.html">Javascript</a><a href="tag/template.html">Template</a></span>
+        </div>
+        <nav class="article-nav">
+            <div>目录</div>
+            <div class="toc">
+<ul>
+<li><a href="#_1">字符串困境</a></li>
+<li><a href="#_2">模板系统</a></li>
+<li><a href="#gazira">gazira中的模板</a><ul>
+<li><a href="#_3">安装</a></li>
+<li><a href="#_4">编译</a></li>
+<li><a href="#_5">语法</a><ul>
+<li><a href="#_6">变量</a></li>
+<li><a href="#_7">条件判断</a></li>
+<li><a href="#_8">循环遍历</a></li>
+<li><a href="#_9">注释</a></li>
+<li><a href="#_10">其他</a></li>
+</ul>
+</li>
+<li><a href="#_11">使用模板</a></li>
+<li><a href="#_12">子模板</a></li>
+<li><a href="#_13">例子</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </nav>
+        <div class="article-content">
+<h2 id="_1">字符串困境</h2>
+<p>先来看看下面，这些代码都真实存在某些项目中：</p>
+<p>push方式</p>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">searchAuthList</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="nx">url</span><span class="o">:</span><span class="s1">'/user/issuers'</span><span class="p">,</span>
+        <span class="nx">type</span><span class="o">:</span><span class="s1">'get'</span><span class="p">,</span>
+        <span class="nx">dataType</span><span class="o">:</span><span class="s1">'json'</span><span class="p">,</span>
+        <span class="nx">success</span><span class="o">:</span><span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">users</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">;</span>
+            <span class="kd">var</span> <span class="nx">arrHtml</span> <span class="o">=</span> <span class="p">[];</span>
+            <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;tr class="auth-tr-title"&gt;&lt;th class="auth-th-name"&gt;姓名&lt;/th&gt;&lt;th class="auth-th-name"&gt;部门&lt;/th&gt;&lt;th class="auth-th-numb"&gt;发起悬赏数量&lt;/th&gt;&lt;th class="auth-th-opr"&gt;操作&lt;/th&gt;&lt;/tr&gt;'</span><span class="p">);</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">users</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">users</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+                <span class="kd">var</span> <span class="nx">deptName</span> <span class="o">=</span> <span class="nx">user</span><span class="p">.</span><span class="nx">deptName</span> <span class="o">||</span> <span class="nx">DEPT_NAME</span><span class="p">;</span>
+                <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;tr&gt;'</span><span class="p">);</span>
+                <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;td&gt;'</span> <span class="o">+</span> <span class="nx">user</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">'&lt;/td&gt;'</span><span class="p">);</span>
+                <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;td&gt;'</span> <span class="o">+</span> <span class="nx">deptName</span> <span class="o">+</span> <span class="s1">'&lt;/td&gt;'</span><span class="p">);</span>
+                <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;td&gt;'</span> <span class="o">+</span> <span class="nx">user</span><span class="p">.</span><span class="nx">issue</span> <span class="o">+</span> <span class="s1">'&lt;/td&gt;'</span><span class="p">);</span>
+                <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;td&gt;&lt;a reward-id="'</span> <span class="o">+</span> <span class="nx">user</span><span class="p">.</span><span class="nx">_id</span> <span class="o">+</span> <span class="s1">'" data-action="cancelAuth"&gt;取消授权&lt;/a&gt;&lt;/td&gt;'</span><span class="p">);</span>
+                <span class="nx">arrHtml</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'&lt;/tr&gt;'</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">'#authorizorList'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">arrHtml</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">''</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">};</span>
+</pre></div>
+<p>直接拼接方式</p>
+<div class="codehilite"><pre><span class="kd">function</span> <span class="nx">rankAjax</span><span class="p">(</span><span class="nx">rid</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="nx">url</span><span class="o">:</span> <span class="s1">'/rank/top10'</span><span class="p">,</span>
+        <span class="nx">type</span><span class="o">:</span> <span class="s1">'get'</span><span class="p">,</span>
+        <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+        <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+            <span class="nx">method</span><span class="o">:</span> <span class="nx">rid</span>
+        <span class="p">},</span>
+        <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span><span class="nx">textStatus</span><span class="p">){</span>
+            <span class="kd">var</span> <span class="nx">info</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+            <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'&lt;ul&gt;'</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">.</span><span class="nx">length</span><span class="o">===</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'&lt;li&gt;暂无排行&lt;/li&gt;'</span><span class="p">;</span>
+            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+                    <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'    &lt;li&gt;'</span><span class="p">;</span>
+                    <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'        &lt;div class="cnt"&gt;'</span><span class="p">;</span>
+                    <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'            '</span><span class="o">+</span><span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s1">'. '</span><span class="o">+</span><span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span><span class="p">;</span>
+                    <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'        &lt;/div&gt;'</span><span class="p">;</span>
+                    <span class="k">if</span><span class="p">(</span><span class="nx">rid</span><span class="o">===</span><span class="mi">1</span><span class="p">){</span>
+                        <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'        &lt;div class="fr"&gt;参与'</span><span class="o">+</span><span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">joined</span><span class="o">+</span><span class="s1">'个悬赏&lt;/div&gt;'</span><span class="p">;</span>
+                    <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">rid</span><span class="o">===</span><span class="mi">2</span><span class="p">){</span>
+                        <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'        &lt;div class="fr"&gt;贡献值：'</span><span class="o">+</span><span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">points</span><span class="o">+</span><span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'    &lt;/li&gt;'</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="nx">info</span> <span class="o">+=</span> <span class="s1">'&lt;/ul&gt;'</span><span class="p">;</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">'.xs_rank'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">info</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+<p>直接在javascript中写html，主要存在的问题是可读性差，维护难度大。一旦代码量达到一定程度，这些字符串拼接会成为代码失控的一个重要原因。<br/>
+注：<code>push方式</code> 还是 <code>+方式</code> 哪种效率更高，这样的讨论很多，这里就有一篇： <a href="http://www.zhihu.com/question/19747496" title="字符串拼接效率">传送门</a></p>
+<p>然后再来看看使用模版的代码：<br/>
+模版代码</p>
+<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"weibo"</span> <span class="na">data-tid=</span><span class="s">"{{topic.tid}}"</span> <span class="na">data-role=</span><span class="s">"weibo"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+    {{Global.Helper.avatar(topic.user)}}
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"name-and-date"</span><span class="nt">&gt;</span>
+        {{Global.Helper.userLink(topic.user)}}
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"date"</span><span class="nt">&gt;&lt;span</span> <span class="na">data-role=</span><span class="s">"date"</span><span class="nt">&gt;</span>{{Global.Helper.cuteDate(topic.post_time)}}<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"emptyspan"</span><span class="nt">&gt;</span>来自{{topic.from_string}}<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"emptyspan"</span><span class="nt">&gt;</span>阅读({{topic.glances}})<span class="nt">&lt;span&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<p>使用</p>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">tpl</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path/to/template'</span><span class="p">);</span>
+<span class="nx">tpl</span><span class="p">.</span><span class="nx">render</span><span class="p">({</span>
+    <span class="nx">topic</span><span class="o">:</span> <span class="nx">data</span>        
+<span class="p">});</span>
+</pre></div>
+<h2 id="_2">模板系统</h2>
+<p>javascript中的所谓模板，本质就是HTML，在其中可以输入一些变量，达到动态输出的目的。为了满足可读性和维护方面的成本，就要求这些模板在书写的时候就是HTML。
+这些在WEB相关的模板，无论后端还是前端，都有体现。比如PHP中的Smarty，nodeJS中的EJS；前端中的<a href="http://handlebarsjs.com" title="handlerbars模板">handlebars</a>，等等。</p>
+<p>模板设计的一个原则： <strong>简单，减少逻辑性</strong></p>
+<p>这个原则是程序设计上 keep it simple 的体现。视图方面保持简单，少逻辑，对于后期的维护帮助是非常大的。从 <a href="https://github.com/janl/mustache.js" title="mustache.js模板">mustache.js</a> 这个前端模板的设计上我们也能感受到这一点。<br/>
+现在的前端模板非常多，目前最经常被使用的是<a href="http://handlebarsjs.com" title="handlerbars模板">handlebars</a>。</p>
+<p>很多模板思路是在HTML文件中插入一个标签，比如<code>pre</code>或者<code>script</code>并将type设置成其他不可解析的，然后从中获取到HTML再进行解析。这种做法有几点不好：</p>
+<ol>
+<li>强制混入到页面中，有些模板是多个页面公用的，造成代码的重复和多方维护  </li>
+<li>每次都从DOM获取HTML，再解析，性能上不好</li>
+</ol>
+<p><a href="http://handlebarsjs.com" title="handlerbars模板">handlebars</a>支持这种方式，也支持预编译方式： <a href="http://handlebarsjs.com/precompilation.html" title="handlerbars预编译">传送门</a>。预编译就是提前将HTML模板编译成javascript，可以直接调用。<br/>
+<a href="https://github.com/caolvchong/gazira" title="a javascript library for web develop">gazira</a> 中采用了自己的一套模板方式<a href="https://github.com/caolvchong/tpl" title="gazira模板工具">tpl</a>，使用预编译方式，将模板编译成支持<a href="http://seajs.org/" title="javascript模块化开发工具">seajs</a>的模块，直接require使用即可。</p>
+<h2 id="gazira">gazira中的模板</h2>
+<h3 id="_3">安装</h3>
+<p><a href="https://github.com/caolvchong/tpl" title="gazira模板工具">tpl</a>已经是npm下的一个包，安装命令：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>npm install tpl2js -g
+</pre></div>
+<h3 id="_4">编译</h3>
+<p>直接编写HTML，再使用编译命令进行编译：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>tpl 模板文件 <span class="o">[</span>目标文件<span class="o">]</span> <span class="o">[</span> --fn name<span class="o">]</span> <span class="o">[</span> --charset charset<span class="o">]</span>
+</pre></div>
+<p>注意：
++ 模板文件必须存在
++ 目标文件如果没有输入，则在模板文件的同目录下生成同名，以tpl.js结尾的文件
++ --fn 指定输出为普通的function结构，把结果返回给name，不指定--fn默认将输出支持seajs的结构
++ --charset指定文件的编码，默认UTF-8，非UTF-8时候需要指定，防止乱码</p>
+<h3 id="_5">语法</h3>
+<p>模板中支持简单的逻辑语法，使用两对换括号包裹起来 {{  }}</p>
+<h4 id="_6">变量</h4>
+<p>变量和表达式都可以使用</p>
+<div class="codehilite"><pre>{{param}}
+</pre></div>
+<h4 id="_7">条件判断</h4>
+<p><code>else if</code> 和 <code>else</code> 是可选的</p>
+<div class="codehilite"><pre>{{if(...)}}
+    ...
+{{else if(...)}}
+    ...
+{{else}}
+    ...
+{{endif}}
+</pre></div>
+<h4 id="_8">循环遍历</h4>
+<p>循环一个数组，start、end、reverse、step可选</p>
+<div class="codehilite"><pre>{{for data=数据list key=索引 item=元 start=起始索引 end=结束索引 reverse=是否逆序 step=步长}}
+    ...
+{{endfor}}
+</pre></div>
+<p>其中，可选变量有以下默认值：</p>
+<div class="codehilite"><pre>key: _key
+item: _item
+start: 0, reverse为true时为 list.length - 1
+end: list.length - 1, reverse为true时为 0
+reverse: false
+step: 1
+</pre></div>
+<p>循环一个对象，object标识这是对象遍历</p>
+<div class="codehilite"><pre>{{for data=数据list key=键 item=值 object=1}}
+    ...
+{{endfor}}
+</pre></div>
+<h4 id="_9">注释</h4>
+<p>所有注释在编译的文件中不存在</p>
+<div class="codehilite"><pre>&lt;!-- 单行注释 --&gt;
+
+&lt;!--
+    多行注释
+    多行注释
+--&gt;
+</pre></div>
+<h4 id="_10">其他</h4>
+<p>模板允许直接执行javascript代码，尽量少用，以便减少逻辑代码。一般用来模板中的一些调试。</p>
+<div class="codehilite"><pre>{{eval console.log('something')}}
+</pre></div>
+<h3 id="_11">使用模板</h3>
+<p>编译生成的js文件，都提供了一个render方法，该方法接受一个JSON参数作为数据源，返回结果是一个HTML字符串。</p>
+<p>seajs方式</p>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">tpl</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path/to/template'</span><span class="p">);</span>
+<span class="nx">tpl</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</pre></div>
+<p>普通function方式
+例如使用以下编译方式：</p>
+<div class="codehilite"><pre><span class="nv">$ </span>tpl hello.html --fn my.tpl.hello
+</pre></div>
+<p>生成模板hello.tpl.js。引入该js后可以使用：(需要事先有my.tpl这个命名空间，可以自定义)</p>
+<div class="codehilite"><pre><span class="nx">my</span><span class="p">.</span><span class="nx">tpl</span><span class="p">.</span><span class="nx">hello</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</pre></div>
+<p>或者自己将其复制到任意的地方来使用</p>
+<h3 id="_12">子模板</h3>
+<p><a href="https://github.com/caolvchong/tpl" title="gazira模板工具">tpl</a> 没有提供子模板功能，如果一个模板中需要调用其他模板，可以使用变量方式：</p>
+<div class="codehilite"><pre><span class="kd">var</span> <span class="nx">mainTpl</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./main'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">itemTpl</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./item'</span><span class="p">);</span>
+<span class="nx">mainTpl</span><span class="p">.</span><span class="nx">render</span><span class="p">({</span>
+    <span class="nx">itemTpl</span><span class="o">:</span> <span class="nx">itemTpl</span><span class="p">,</span>
+    <span class="nx">otherData</span><span class="o">:</span> <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+<h3 id="_13">例子</h3>
+<div class="codehilite"><pre><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">require</span><span class="p">,</span> <span class="nx">exports</span><span class="p">,</span> <span class="nx">module</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">$</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'$'</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">tpl</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./tpl'</span><span class="p">);</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#btn'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">'#tpl-box'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">tpl</span><span class="p">.</span><span class="nx">render</span><span class="p">({</span>
+                <span class="nx">title</span><span class="o">:</span> <span class="s1">'关系'</span><span class="p">,</span>
+                <span class="nx">name</span><span class="o">:</span> <span class="s1">'李四'</span><span class="p">,</span>
+                <span class="nx">sex</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="nx">friendList</span><span class="o">:</span> <span class="p">[{</span>
+                    <span class="nx">name</span><span class="o">:</span> <span class="s1">'张三'</span><span class="p">,</span>
+                    <span class="nx">sex</span><span class="o">:</span> <span class="mi">1</span>
+                <span class="p">},</span> <span class="p">{</span>
+                    <span class="nx">name</span><span class="o">:</span> <span class="s1">'王五'</span>
+                <span class="p">},</span> <span class="p">{</span>
+                    <span class="nx">name</span><span class="o">:</span> <span class="s1">'钱七'</span><span class="p">,</span>
+                    <span class="nx">sex</span><span class="o">:</span> <span class="mi">2</span>
+                <span class="p">},</span> <span class="p">{</span>
+                    <span class="nx">name</span><span class="o">:</span> <span class="s1">'孙二'</span>
+                <span class="p">},</span> <span class="p">{</span>
+                    <span class="nx">name</span><span class="o">:</span> <span class="s1">'陈八'</span><span class="p">,</span>
+                    <span class="nx">sex</span><span class="o">:</span> <span class="mi">2</span>
+                <span class="p">}],</span>
+                <span class="nx">info</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="nx">name</span><span class="o">:</span> <span class="s1">'王八'</span><span class="p">,</span>
+                    <span class="nx">age</span><span class="o">:</span> <span class="mi">28</span>
+                <span class="p">}</span>
+            <span class="p">}))</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div></div>
+
+<blockquote class="article-copyright">
+    <ul>
+        <li>作者：<a href="http://tomjoke.com/about.html" title="Tom">Tom</a></li>
+        <li>原文：<a href="template in javascript.html" title="javascript中的模板">javascript中的模板</a></li>
+        <li>本文允许任意转载，但必须以链接形式注明作者和原文出处，并给出本声明</li>
+    </ul>
+</blockquote>    </div>
+
+    <div class="article-bar">
+        <ul class="article-neighbors">
+            <li class="prev">
+                上一篇：
+                <a href="http://tomjoke.com/why can not inherit like this.html" title="为什么不能这么继承">为什么不能这么继承</a>
+            </li>
+
+            <li class="prev">
+                下一篇：
+                <a href="http://tomjoke.com/ubuntu 12.04 LTS development environment configuration.html" title="ubuntu 12.04 LTS 配备">ubuntu 12.04 LTS 配备</a>
+            </li>
+        </ul>
+    </div>
+
+</article>
+
+<div class="ds-thread"></div>
+<script>
+    var duoshuoQuery = {short_name:"tomblog"};
+    seajs.use('http://static.duoshuo.com/embed.js');
+</script>    </div>
+
+
+    <aside class="right">
+        <section class="copyright">
+            Copyright &copy; 2014 Tom's blog. All Rights Reserved.
+        </section>
+    </aside>
+
+</div>
+
+<script>seajs.use('dist/app/article/index.js');</script>
+<script>
+    seajs.use('http://hm.baidu.com/h.js?b2b69380aee7d3c9db345aa8eb2eb90c');
+</script></body>
+</html>
