@@ -11,13 +11,13 @@
                                     <key>kind</key>
                                     <string>software-package</string>
                                     <key>url</key>
-                                    <string>https://caolvchong.github.io/data/myapp.ipa</string>
+                                    <string>https://www.dropbox.com/s/p34h6e994h9t228/myapp.ipa?dl=0</string>
                             </dict>
                     </array>
                     <key>metadata</key>
                     <dict>
                             <key>bundle-identifier</key>
-                            <string>com.clc.$(PRODUCT_NAME:rfc1034identifier)</string>
+                            <string>com.clc.myapp</string>
                             <key>bundle-version</key>
                             <string>1</string>
                             <key>kind</key>
