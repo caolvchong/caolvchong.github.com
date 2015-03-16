@@ -129,11 +129,22 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 父类</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">var</span> P = <span class="function"><span class="keyword">function</span><span class="params">(a, b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.a = a;</span><br><span class="line">    <span class="keyword">this</span>.b = b;</span><br><span class="line">&#125;;</span><br><span class="line">P.prototype.get = <span class="function"><span class="keyword">function</span><span class="params">(name)</span> </span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>[name]);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 子类</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">var</span> S = <span class="function"><span class="keyword">function</span><span class="params">(a, b, c)</span> </span>&#123;</span><br><span class="line">    P.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">this</span>.c = c;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</span><br><span class="line">F.prototype = P.prototype;</span><br><span class="line">S.prototype = <span class="keyword">new</span> F();</span><br><span class="line">S.prototype.constructor = S;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s.get(<span class="string">'b'</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
 <h2 id="一个封装的疑问">一个封装的疑问</h2><p>前一段一同事讨论问题时候，问到javascript继承用下面的方式为什么得不到预期：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> S = <span class="function"><span class="keyword">function</span><span class="params">(a, b, c)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</span><br><span class="line">    F.prototype = P.prototype;</span><br><span class="line">    P.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">this</span>.c = c;</span><br><span class="line">    S.prototype = <span class="keyword">new</span> F();</span><br><span class="line">    S.prototype.constructor = S;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>他希望构造器和原型链可以放在一个地方继承，但是按上面的写法，下面的调用会有问题：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s1.get(<span class="string">'b'</span>); <span class="comment">// 报错</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s1.get(<span class="string">'b'</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
 <h2 id="原因分析">原因分析</h2><p>本质原因是new机制导致，ECMA-262 5th 规范：</p>
 <blockquote>
-<p>13.2.2 [[Construct]]<br>When the [[Construct]] property for a Function object F is called, the following steps are taken:<br>1.Create a new native ECMAScript object.<br>2.Set the [[Class]] property of Result(1) to “Object”.<br>3.Get the value of the prototype property of the F.<br>4.If Result(3) is an object, set the [[Prototype]] property of Result(1) to Result(3).<br>5.If Result(3) is not an object, set the [[Prototype]] property of Result(1) to the original Object prototype object as described in 15.2.3.1.<br>6.Invoke the [[Call]] property of F, providing Result(1) as the this value and providing the argument list passed into [[Construct]] as the argument values.<br>7.If Type(Result(6)) is Object then return Result(6).<br>8.Return Result(1).  </p>
+<p>13.2.2 [[Construct]]<br>When the [[Construct]] property for a Function object F is called, the following steps are taken:  </p>
+<ol>
+<li>Create a new native ECMAScript object.  </li>
+<li>Set the [[Class]] property of Result(1) to “Object”.  </li>
+<li>Get the value of the prototype property of the F.  </li>
+<li>If Result(3) is an object, set the [[Prototype]] property of Result(1) to Result(3).  </li>
+<li>If Result(3) is not an object, set the [[Prototype]] property of Result(1) to the original Object prototype object as described in 15.2.3.1.  </li>
+<li>Invoke the [[Call]] property of F, providing Result(1) as the this value and providing the argument list passed into [[Construct]] as the argument values.  </li>
+<li>If Type(Result(6)) is Object then return Result(6).  </li>
+<li>Return Result(1).  </li>
+</ol>
 </blockquote>
 <p>第一次执行 new S(1, 2, 3) 在规范中的相关过程描述为：</p>
 <ol>
@@ -175,7 +186,7 @@
 
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2009/04/11/javascript中的一个scope例子分析/">javascript中的一个scope例子分析</a>
+                <a href="/2010/05/25/从==到javascaript的类型转换/">从==到javascript的类型转换</a>
               
             </div>
           </div>
@@ -236,7 +247,7 @@
       <p class="site-description motion-element">生活点滴</p>
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </div>
         <div class="site-state-item site-state-tags">
@@ -244,7 +255,7 @@
             <span class="site-state-item-name">标签</span>
         </div>
         <div class="site-state-item site-state-pages">
-            <span class="site-state-item-count">0</span>
+            <span class="site-state-item-count">1</span>
             <span class="site-state-item-name">页面</span>
         </div>
       </div>

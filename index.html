@@ -345,8 +345,12 @@
         
           <div class="post-tags">
             
-              <a href="/tags/javascript-template/">
-                #javascript, template
+              <a href="/tags/javascript/">
+                #javascript
+              </a>
+            
+              <a href="/tags/template/">
+                #template
               </a>
             
           </div>
@@ -414,26 +418,114 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 父类</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">var</span> P = <span class="function"><span class="keyword">function</span><span class="params">(a, b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.a = a;</span><br><span class="line">    <span class="keyword">this</span>.b = b;</span><br><span class="line">&#125;;</span><br><span class="line">P.prototype.get = <span class="function"><span class="keyword">function</span><span class="params">(name)</span> </span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>[name]);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 子类</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">var</span> S = <span class="function"><span class="keyword">function</span><span class="params">(a, b, c)</span> </span>&#123;</span><br><span class="line">    P.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">this</span>.c = c;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</span><br><span class="line">F.prototype = P.prototype;</span><br><span class="line">S.prototype = <span class="keyword">new</span> F();</span><br><span class="line">S.prototype.constructor = S;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s.get(<span class="string">'b'</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
 <h2 id="一个封装的疑问">一个封装的疑问</h2><p>前一段一同事讨论问题时候，问到javascript继承用下面的方式为什么得不到预期：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> S = <span class="function"><span class="keyword">function</span><span class="params">(a, b, c)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</span><br><span class="line">    F.prototype = P.prototype;</span><br><span class="line">    P.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">this</span>.c = c;</span><br><span class="line">    S.prototype = <span class="keyword">new</span> F();</span><br><span class="line">    S.prototype.constructor = S;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>他希望构造器和原型链可以放在一个地方继承，但是按上面的写法，下面的调用会有问题：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s1.get(<span class="string">'b'</span>); <span class="comment">// 报错</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s1.get(<span class="string">'b'</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-<h2 id="原因分析">原因分析</h2><p>本质原因是new机制导致，ECMA-262 5th 规范：</p>
-<blockquote>
-<p>13.2.2 [[Construct]]<br>When the [[Construct]] property for a Function object F is called, the following steps are taken:<br>1.Create a new native ECMAScript object.<br>2.Set the [[Class]] property of Result(1) to “Object”.<br>3.Get the value of the prototype property of the F.<br>4.If Result(3) is an object, set the [[Prototype]] property of Result(1) to Result(3).<br>5.If Result(3) is not an object, set the [[Prototype]] property of Result(1) to the original Object prototype object as described in 15.2.3.1.<br>6.Invoke the [[Call]] property of F, providing Result(1) as the this value and providing the argument list passed into [[Construct]] as the argument values.<br>7.If Type(Result(6)) is Object then return Result(6).<br>8.Return Result(1).  </p>
-</blockquote>
-<p>第一次执行 new S(1, 2, 3) 在规范中的相关过程描述为：</p>
-<ol>
-<li>obj = new Object()</li>
-<li>obj[[Prototype]] = S.prototype，可以看的出来S.prototype不存在，规范则将其指向 new Object()</li>
-<li>S.call(obj, 1, 2, 3)，将obj作为this执行S函数，此时将会执行到 S.prototype = new F()，为第二次new准备了原型链</li>
-<li>返回obj，因此obj[[Prototype]]是个空的obj，没有get方法</li>
-</ol>
-<p>而第二次执行 new S(1, 2, 3)，由于第一次的 S.prototype = new F() 的赋值，obj[[Prototype]]将等于P.prototype<br>因此第二次具备了get方法</p>
-<h2 id="实现需求的方案">实现需求的方案</h2><p>上述需求是想让 new S的同时，让对象从父对象P上得到原型链。new的原型继承无法做到，可以通过原型拷贝的方式实现</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> S = <span class="function"><span class="keyword">function</span><span class="params">(a, b, c)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> method <span class="keyword">in</span> P.prototype) &#123; <span class="comment">// 原型链拷贝</span></span><br><span class="line">        S.prototype[method] = P.prototype[method];</span><br><span class="line">    &#125;</span><br><span class="line">    P.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">    <span class="keyword">this</span>.c = c;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> S(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">s1.get(<span class="string">'b'</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-<p>当然，可以做一个简单的封装</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> extend = <span class="function"><span class="keyword">function</span><span class="params">(superClass, subClass, scope)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">var</span> method <span class="keyword">in</span> superClass.prototype) &#123; <span class="comment">// 原型链拷贝</span></span><br><span class="line">         subClass.prototype[method] = superClass.prototype[method];</span><br><span class="line">     &#125;</span><br><span class="line">     superClass.apply(scope, <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">3</span>)); <span class="comment">// 构造器继承</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> S = <span class="function"><span class="keyword">function</span><span class="params">(a, b, c)</span> </span>&#123;</span><br><span class="line">    extend(P, S, <span class="keyword">this</span>, a, b);</span><br><span class="line">    <span class="keyword">this</span>.c = c;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>原型链拷贝方式还有个优势，多继承，这是原型链继承方式所不能做到的。</p>
+            <div class="post-more-link text-center">
+              <a class="btn" href="/2012/06/08/为什么不能这么继承/#more">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+        
+      </div>
+    
 
+    
+      <div class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/javascript/">
+                #javascript
+              </a>
+            
+          </div>
+        
+
+        
+
+        
+        
+          <div class="post-eof"></div>
+        
+      </div>
+    
+  </div>
+
+
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2010/05/25/从==到javascaript的类型转换/">
+                从==到javascript的类型转换
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              发表于 2010-05-24
+            
+          </span>
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2010/05/25/从==到javascaript的类型转换/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2010/05/25/从==到javascaript的类型转换/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          
+            <h2 id="前言">前言</h2><p><code>==</code> 看起来简单，其实做的工作不少，几乎贯穿了javascript中数据类型及其转换。</p>
+<p>本文不仅仅关注与<code>==</code>，在分析的过程中讲解到的东西，在javascript（准确的说是ecmascript）很多底层分析中可以用的到</p>
+<h2 id="数据类型">数据类型</h2><p>要分析<code>==</code>，首先从javascript的变量类型说起。</p>
+<p>javascript有9种数据类型：</p>
+<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Boolean</li>
+<li>String</li>
+<li>Number</li>
+<li>Object</li>
+<li>Reference</li>
+<li>List</li>
+<li>Completion</li>
+</ul>
+<p>其中 Reference，List，Completion只是作为执行的中间结果，因此我们关注的是前6种数据类型，分为三类：</p>
+<ul>
+<li>Undefined，Null</li>
+<li>Boolean，String，Number</li>
+<li>Object</li>
+</ul>
+<p>按常理是分为两种，Object作为引用类型，而其他五种作为基本类型。分为三种的理由是：</p>
+<p>Undefined和Null作为特殊的单值类型，不具备其他将数据类型转为这两种类型的能力。这也就是下面一节要阐述的内容。</p>
+            <div class="post-more-link text-center">
+              <a class="btn" href="/2010/05/25/从==到javascaript的类型转换/#more">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
         
       </div>
@@ -574,7 +666,7 @@
       <p class="site-description motion-element">生活点滴</p>
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </div>
         <div class="site-state-item site-state-tags">
@@ -582,7 +674,7 @@
             <span class="site-state-item-name">标签</span>
         </div>
         <div class="site-state-item site-state-pages">
-            <span class="site-state-item-count">0</span>
+            <span class="site-state-item-count">1</span>
             <span class="site-state-item-name">页面</span>
         </div>
       </div>

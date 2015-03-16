@@ -22,7 +22,7 @@
 
 	<meta name="keywords" content="javascript," />
 
-  <title> javascript中的一个scope例子分析 // Tom's blog </title>
+  <title> 从==到javascript的类型转换 // Tom's blog </title>
 </head>
 
 <body>
@@ -93,7 +93,7 @@
           
           
             
-              javascript中的一个scope例子分析
+              从==到javascript的类型转换
             
           
         </h1>
@@ -102,15 +102,15 @@
       <div class="post-meta">
           <span class="post-time">
             
-              发表于 2009-04-10
+              发表于 2010-05-24
             
           </span>
         
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2009/04/11/javascript中的一个scope例子分析/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2009/04/11/javascript中的一个scope例子分析/"></span>
+            <a href="/2010/05/25/从==到javascaript的类型转换/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2010/05/25/从==到javascaript的类型转换/"></span>
             </a>
           </span>
           
@@ -125,32 +125,261 @@
         
 
         
-          <p>代码是这样的（在运行代码前写出控制台打印的内容）：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">closure</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> v1 = <span class="string">'v1'</span>;</span><br><span class="line">    <span class="keyword">this</span>.v2 = <span class="string">'v2'</span>;</span><br><span class="line">    <span class="keyword">var</span> add1 = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        v1 += <span class="string">'-add1'</span>;</span><br><span class="line">        v2 += <span class="string">'-add1'</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(v1);</span><br><span class="line">        <span class="built_in">console</span>.log(v2);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">this</span>.add2 = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        v1 += <span class="string">'-add2'</span>;</span><br><span class="line">        v2 += <span class="string">'-add2'</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(v1);</span><br><span class="line">        <span class="built_in">console</span>.log(v2);</span><br><span class="line">    &#125;</span><br><span class="line">    add1();</span><br><span class="line">    add2();</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">closure ();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'---'</span>);</span><br><span class="line"><span class="keyword">new</span> closure();</span><br></pre></td></tr></table></figure>
-<p>下面开始分析过程：</p>
+          <h2 id="前言">前言</h2><p><code>==</code> 看起来简单，其实做的工作不少，几乎贯穿了javascript中数据类型及其转换。</p>
+<p>本文不仅仅关注与<code>==</code>，在分析的过程中讲解到的东西，在javascript（准确的说是ecmascript）很多底层分析中可以用的到</p>
+<h2 id="数据类型">数据类型</h2><p>要分析<code>==</code>，首先从javascript的变量类型说起。</p>
+<p>javascript有9种数据类型：</p>
+<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Boolean</li>
+<li>String</li>
+<li>Number</li>
+<li>Object</li>
+<li>Reference</li>
+<li>List</li>
+<li>Completion</li>
+</ul>
+<p>其中 Reference，List，Completion只是作为执行的中间结果，因此我们关注的是前6种数据类型，分为三类：</p>
+<ul>
+<li>Undefined，Null</li>
+<li>Boolean，String，Number</li>
+<li>Object</li>
+</ul>
+<p>按常理是分为两种，Object作为引用类型，而其他五种作为基本类型。分为三种的理由是：</p>
+<p>Undefined和Null作为特殊的单值类型，不具备其他将数据类型转为这两种类型的能力。这也就是下面一节要阐述的内容。</p>
 <a id="more"></a>
-<p>执行closure()，其中的this将指向window，这点在规范（ECMA-262 5th）中提到：</p>
+<h2 id="数据类型的转换">数据类型的转换</h2><h3 id="toPrimitive(value)">toPrimitive(value)</h3><p>将value转为基本数据类型（非Object外的五种）</p>
+<table>
+<thead>
+<tr>
+<th>value的数据类型</th>
+<th style="text-align:right">返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本数据类型</td>
+<td style="text-align:right">value</td>
+</tr>
+<tr>
+<td>Object</td>
+<td style="text-align:right">Number/String</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p>10.4.3 Entering Function Code<br>2.Else if thisArg is null or undefined, set the ThisBinding to the global object.</p>
+<p>toPrimitive(Object)，首先调用Object的[[DefaultValue]]<br><a href="hint">[DefaultValue]</a> 接受一个hint参数（number或者string），即根据传入的参数是number还是string决定转换方式：</p>
+<ul>
+<li>如果传入的是string，则先调用toString，只有在没有toString或者toString没有返回基本数据类型的情况下，调用valueOf</li>
+<li>如果传入的是number，则先调用valueOf，只有在没有valueOf或者valueOf没有返回基本数据类型的情况下，调用toString</li>
+<li>如果没有hint，如果是Date Object，则hint是string，否则，hint是number</li>
+</ul>
 </blockquote>
-<p>浏览器中的global object为window，因此进入closure函数体后，window上将增加<code>v2变量</code>与<code>add2方法</code>，即<code>window.v2</code>与<code>window.add2</code>。<br>注意的是window.add2是在closure内部声明的，它可以访问得到closure的私有变量。<br>大致执行过程为：</p>
+<h3 id="toNumber(value)">toNumber(value)</h3><p>将value转为Number类型</p>
+<table>
+<thead>
+<tr>
+<th>value的数据类型</th>
+<th style="text-align:right">返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Undefined</td>
+<td style="text-align:right">NaN</td>
+</tr>
+<tr>
+<td>Null</td>
+<td style="text-align:right">+0</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td style="text-align:right">true:1/false:0</td>
+</tr>
+<tr>
+<td>String</td>
+<td style="text-align:right">除去空格外，以10进制（数字）/8进制（0）/16进制（0x）开头，返回转为10进制的数字，否则返回NaN</td>
+</tr>
+<tr>
+<td>Number</td>
+<td style="text-align:right">不转变</td>
+</tr>
+<tr>
+<td>Object</td>
+<td style="text-align:right">调用 toPrimitive(number)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="toBoolean(value)">toBoolean(value)</h3><p>将value转为Boolean类型</p>
+<table>
+<thead>
+<tr>
+<th>value的数据类型</th>
+<th style="text-align:right">返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Undefined</td>
+<td style="text-align:right">false</td>
+</tr>
+<tr>
+<td>Null</td>
+<td style="text-align:right">false</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td style="text-align:right">不转变</td>
+</tr>
+<tr>
+<td>String</td>
+<td style="text-align:right">空字符串返回false，其他true</td>
+</tr>
+<tr>
+<td>Number</td>
+<td style="text-align:right">0，+0，-0，NaN返回false；其他true</td>
+</tr>
+<tr>
+<td>Object</td>
+<td style="text-align:right">true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="toString(value)">toString(value)</h3><p>将value转为String类型</p>
+<table>
+<thead>
+<tr>
+<th>value的数据类型</th>
+<th style="text-align:right">返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Undefined</td>
+<td style="text-align:right">‘undefined’</td>
+</tr>
+<tr>
+<td>Null</td>
+<td style="text-align:right">‘null’</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td style="text-align:right">true:’true’/false:’false’</td>
+</tr>
+<tr>
+<td>String</td>
+<td style="text-align:right">不转变</td>
+</tr>
+<tr>
+<td>Number</td>
+<td style="text-align:right">NaN:’NaN’/+0,-0:0/负数:-xx/无穷:Infinity/其他:10进制数</td>
+</tr>
+<tr>
+<td>Object</td>
+<td style="text-align:right">调用 toPrimitive(string)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="toObject(value)">toObject(value)</h3><p>将value转为Object类型</p>
+<table>
+<thead>
+<tr>
+<th>value的数据类型</th>
+<th style="text-align:right">返回值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Undefined</td>
+<td style="text-align:right">抛出错误</td>
+</tr>
+<tr>
+<td>Null</td>
+<td style="text-align:right">抛出错误</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td style="text-align:right">转Boolean Object</td>
+</tr>
+<tr>
+<td>String</td>
+<td style="text-align:right">转String Object</td>
+</tr>
+<tr>
+<td>Number</td>
+<td style="text-align:right">转Number Object</td>
+</tr>
+<tr>
+<td>Object</td>
+<td style="text-align:right">不转变</td>
+</tr>
+</tbody>
+</table>
+<h2 id="==_操作符的具体操作">== 操作符的具体操作</h2><p>不失普遍性的，假设要分析的例子为A == B；</p>
 <ol>
-<li>私有变量v1赋值为 ‘v1’</li>
-<li>window.v2赋值为 ‘v2’</li>
-<li>进入add1函数体：v1 = ‘v1-add1’；v2当前作用域中没有找到，向上找到window.v2，处理为 window.v2 = ‘v2-add1’。打印</li>
-<li>进入add2函数体（同样add2在当前作用域中没有找到，向上找到window.add2）：v1 = ‘v1-add1-add2’，window.v2 = ‘v2-add1-add2’。打印</li>
+<li>先执行A表达式（左表达式），并获取其返回值，记作x</li>
+<li>然后执行B表达式（右表达式），并获取其返回值，记作y</li>
+<li>比较 x == y;</li>
+<li>获取Type(x) 和 Type(y)，注意，这里的Type() 和 typeof 不一样，这里的Type 得到是第一节提到的6种数据类型。然后分5，6情况讨论</li>
+<li>如果数据类型一致的操作<blockquote>
+<p>若x类型是Undefined，返回true<br>若x类型是Null，返回true<br>若x类型是Boolean，同为true或者同为false：true；不同：false<br>若x类型是String，当长度一致，各个字母一致：true；否则：false<br>若x类型是Number，存在NaN，返回false；不存在NaN，按以下规则：</p>
+<ul>
+<li>数字相同：true</li>
+<li>数字不同</li>
+<li>一个+0，一个-0： true</li>
+<li>其他： false</li>
+</ul>
+<p>若x类型是Object，引自同一个对象：true；否则：false</p>
+</blockquote>
+</li>
+<li>如果数据类型不一致<blockquote>
+<p>若x是Undefined</p>
+<ul>
+<li>y是Null，返回true</li>
+<li>y是其他类型，返回false</li>
+</ul>
+<p>若x是Null</p>
+<ul>
+<li>y是Undefined，返回true</li>
+<li>y是其他类型，返回false</li>
+</ul>
+<p>若x是Number</p>
+<ul>
+<li>y是Undefined、Null，返回false</li>
+<li>y是Boolean，String，执行x == toNumber(y)，这样两者数据类型一致，返回到第5步的Number进行比较</li>
+<li>y是Object，执行x == toPrimitive(y)，这里y的类型转换中调用[[DefaultValue]]，不传hint（因此先call valueOf）</li>
+</ul>
+<p>若x是Boolean，执行 toNumber(x) == y</p>
+<ul>
+<li>y是Number，则类型一致，返回到第5步的Number进行比较</li>
+<li>y不是Number，类型不一致，返回到第6步的Number进行比较</li>
+</ul>
+<p>若x是String</p>
+<ul>
+<li>y是Undefined, Null，返回false</li>
+<li>y是Number，执行 toNumber(x) == y，这样两者数据类型一致，返回到第5步的Number进行比较</li>
+<li>y是Boolean，执行 x == toNumber(y)，这样就回到x是String，y是Number的情况</li>
+<li>y是Object，执行x == toPrimitive(y)，这里y的类型转换中调用[[DefaultValue]]，不传hint（因此先call valueOf）</li>
+</ul>
+<p>若x是Object</p>
+<ul>
+<li>y是Undefined, Null，返回false</li>
+<li>y是Number，执行toPrimitive(x) == y，这里y的类型转换中调用[[DefaultValue]]，不传hint（因此先call valueOf）</li>
+<li>y是Boolean，执行x == toNumber(y)，这样返回到第6步的x是Object，y是Number的情况</li>
+<li>y是String，执行toPrimitive(x)==y，这里x的类型转换中调用[[DefaultValue]]，不传hint（因此先call valueOf）</li>
+</ul>
+</blockquote>
+</li>
 </ol>
-<p>因此输出结果为：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">v1-add1</span><br><span class="line">v2-add1</span><br><span class="line">v1-add1-add2</span><br><span class="line">v2-add1-add2</span><br></pre></td></tr></table></figure>
-<p>然后执行 new closure()，此时this将指向对象实例，大致执行过程为：</p>
-<ol>
-<li>私有变量v1赋值为 ‘v1’</li>
-<li>成员变量v2赋值为 ‘v2’，即 this.v2 = ‘v2’</li>
-<li>进入add1函数体：v1 = ‘v1-add1’；v2（注意不是this.v2）当前作用域中没有找到，向上找到window.v2（此时值为上次执行的结果’v2-add1-add2’），处理为 window.v2 = ‘v2-add1-add2-add1’。打印</li>
-<li>进入add2函数体（注意不是this.add2，add2在当前作用域中没有找到，向上找到window.add2）：<br>v1 = ‘v1-add1-add2-add2’，这里的v1是上次closure()执行后的（值为 ‘v1-add1-add2’），因为window.add2上在那里声明的<br>v2 则继续访问到window.v2，处理为 window.v2 = ‘v2-add1-add2-add1-add2’<br>打印</li>
-</ol>
-<p>因此输出结果为：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">v1-add1</span><br><span class="line">v2-add1-add2-add1</span><br><span class="line">v1-add1-add2-add2</span><br><span class="line">v2-add1-add2-add1-add2</span><br></pre></td></tr></table></figure>
+<h2 id="练习">练习</h2><p>判断下面表达式的值</p>
+<p>第一组：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span> == <span class="literal">true</span>;</span><br><span class="line"><span class="number">1</span> == <span class="literal">true</span>;</span><br><span class="line">-<span class="number">1</span> == <span class="literal">true</span>;</span><br><span class="line">[] == <span class="literal">true</span>;</span><br><span class="line">[] == <span class="number">0</span>;</span><br><span class="line">[] == <span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<p>第二组：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">null</span> == <span class="literal">undefined</span>;</span><br><span class="line"><span class="literal">null</span> = <span class="literal">NaN</span>;</span><br><span class="line"><span class="literal">undefined</span> = <span class="literal">NaN</span>;</span><br><span class="line"><span class="literal">undefined</span> = <span class="literal">false</span>;</span><br><span class="line"><span class="literal">null</span> = <span class="literal">false</span>;</span><br></pre></td></tr></table></figure></p>
+<p>第三组：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span> == <span class="literal">null</span>;</span><br><span class="line"><span class="number">0</span> == <span class="literal">undefined</span>;</span><br><span class="line"><span class="literal">NaN</span> == <span class="literal">NaN</span>;</span><br><span class="line"><span class="literal">Infinity</span> == <span class="string">'1'</span>;</span><br></pre></td></tr></table></figure></p>
+<p>第四组：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;&#125;;</span><br><span class="line">o == <span class="literal">true</span>;</span><br><span class="line">o == <span class="number">1</span>;</span><br><span class="line">o == <span class="number">0</span>;</span><br><span class="line">o == <span class="string">'[object Object]'</span>;</span><br></pre></td></tr></table></figure></p>
+<p>第五组：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">f == <span class="literal">true</span>;</span><br><span class="line">f == f.valueOf();</span><br><span class="line">f == f.toString();</span><br></pre></td></tr></table></figure></p>
+<p>第六组：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;&#125;; </span><br><span class="line">o.valueOf = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;; </span><br><span class="line">o.toString = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'hello'</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">o == <span class="literal">true</span>;</span><br><span class="line">o == <span class="number">1</span>;</span><br><span class="line">o == <span class="number">0</span>;</span><br><span class="line">o == <span class="string">'[object Object]'</span>;</span><br><span class="line">o == <span class="string">'hello'</span>;</span><br></pre></td></tr></table></figure></p>
+<h2 id="总结">总结</h2><p>如果认真看完，说明你蛋疼</p>
 
         
       </div>
@@ -172,11 +401,13 @@
           <div class="post-nav">
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2010/05/25/从==到javascaript的类型转换/">从==到javascript的类型转换</a>
+                <a href="/2012/06/08/为什么不能这么继承/">为什么不能这么继承</a>
               
             </div>
 
             <div class="post-nav-next post-nav-item">
+              
+                <a href="/2009/04/11/javascript中的一个scope例子分析/">javascript中的一个scope例子分析</a>
               
             </div>
           </div>
@@ -193,8 +424,8 @@
   
     <div class="comments" id="comments">
       
-        <div class="ds-thread" data-thread-key="2009/04/11/javascript中的一个scope例子分析/"
-             data-title="javascript中的一个scope例子分析" data-url="https://caolvchong.github.io/2009/04/11/javascript中的一个scope例子分析/">
+        <div class="ds-thread" data-thread-key="2010/05/25/从==到javascaript的类型转换/"
+             data-title="从==到javascript的类型转换" data-url="https://caolvchong.github.io/2010/05/25/从==到javascaript的类型转换/">
         </div>
 
       
@@ -270,7 +501,7 @@
 
     
       <div class="post-toc sidebar-panel-active">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-number">2.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型的转换"><span class="nav-number">3.</span> <span class="nav-text">数据类型的转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#toPrimitive(value)"><span class="nav-number">3.1.</span> <span class="nav-text">toPrimitive(value)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#toNumber(value)"><span class="nav-number">3.2.</span> <span class="nav-text">toNumber(value)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#toBoolean(value)"><span class="nav-number">3.3.</span> <span class="nav-text">toBoolean(value)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#toString(value)"><span class="nav-number">3.4.</span> <span class="nav-text">toString(value)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#toObject(value)"><span class="nav-number">3.5.</span> <span class="nav-text">toObject(value)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#==_操作符的具体操作"><span class="nav-number">4.</span> <span class="nav-text">== 操作符的具体操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习"><span class="nav-number">5.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol>
       </div>
     
   </div>
