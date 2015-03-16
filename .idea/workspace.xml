@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de31ffda-819d-49ce-865f-50f48e3a0767" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/myapp.ipa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_bordered-pulled.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_core.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_fixed-width.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_font-awesome.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_icons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_larger.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_mixins.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_path.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_rotated-flipped.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_spinning.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_stacked.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/02bd8a892c5458b619960d27f3b1f1ef4e65561c/_variables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_article.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_basic.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_highlight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_layout.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_pagination.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/0c6a6c0c67cfdcfb47557e47f60f0bc457004083/_setting.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/5edf1ed871d37faa5d19885d296fcf35b6245b52/404.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/5edf1ed871d37faa5d19885d296fcf35b6245b52/about.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/5edf1ed871d37faa5d19885d296fcf35b6245b52/archives.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/5edf1ed871d37faa5d19885d296fcf35b6245b52/article.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/5edf1ed871d37faa5d19885d296fcf35b6245b52/base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/5edf1ed871d37faa5d19885d296fcf35b6245b52/tag.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_bordered-pulled.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_core.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_fixed-width.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_font-awesome.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_icons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_larger.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_mixins.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_path.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_rotated-flipped.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_spinning.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_stacked.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8408438c5e7973a4d21c5c3c5ceda07f8f0bfced/_variables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_article.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_basic.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_highlight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_layout.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_pagination.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/8f3219d66cf825198f613ad337c5df2e974b12c2/_setting.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/faa767c7755fb702d3c3065c94b2e1080a9ec2dd/404.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/faa767c7755fb702d3c3065c94b2e1080a9ec2dd/about.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/faa767c7755fb702d3c3065c94b2e1080a9ec2dd/archives.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/faa767c7755fb702d3c3065c94b2e1080a9ec2dd/article.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/faa767c7755fb702d3c3065c94b2e1080a9ec2dd/base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/themes/default/.sass-cache/faa767c7755fb702d3c3065c94b2e1080a9ec2dd/tag.scssc" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/_backup/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/404.html" afterPath="$PROJECT_DIR$/_backup/404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/_backup/about.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/archives.html" afterPath="$PROJECT_DIR$/_backup/archives.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/category/misc.html" afterPath="$PROJECT_DIR$/_backup/category/misc.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/feeds/all.atom.xml" afterPath="$PROJECT_DIR$/_backup/feeds/all.atom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/feeds/misc.atom.xml" afterPath="$PROJECT_DIR$/_backup/feeds/misc.atom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/in the days of ND.html" afterPath="$PROJECT_DIR$/_backup/in the days of ND.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/_backup/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/_backup/static/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/_backup/static/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/_backup/static/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/_backup/static/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/_backup/static/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/fonts/tom.ttf" afterPath="$PROJECT_DIR$/_backup/static/fonts/tom.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/aboutme.jpg" afterPath="$PROJECT_DIR$/_backup/static/images/aboutme.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/article/manutd-scarf.jpeg" afterPath="$PROJECT_DIR$/_backup/static/images/article/manutd-scarf.jpeg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/avatar.jpg" afterPath="$PROJECT_DIR$/_backup/static/images/avatar.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/favicon.gif" afterPath="$PROJECT_DIR$/_backup/static/images/favicon.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/favicon.ico" afterPath="$PROJECT_DIR$/_backup/static/images/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/config.js" afterPath="$PROJECT_DIR$/_backup/static/js/config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/dist/app/article/index.js" afterPath="$PROJECT_DIR$/_backup/static/js/dist/app/article/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/dist/lib/cmp/editor/ueditor/ueditor.js" afterPath="$PROJECT_DIR$/_backup/static/js/dist/lib/cmp/editor/ueditor/ueditor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/jquery/jquery-1.10.1.js" afterPath="$PROJECT_DIR$/_backup/static/js/jquery/jquery-1.10.1.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/jquery/jquery.js" afterPath="$PROJECT_DIR$/_backup/static/js/jquery/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/seajs/sea.js" afterPath="$PROJECT_DIR$/_backup/static/js/seajs/sea.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/seajs/seajs-debug.js" afterPath="$PROJECT_DIR$/_backup/static/js/seajs/seajs-debug.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/app/article/index.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/app/article/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/app/article/navigation.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/app/article/navigation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/app/common.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/app/common.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/auto-render.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/auto-render.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/autocomplete.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/autocomplete.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/data-source.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/data-source.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/filter.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/filter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/selector.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/selector.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/textarea-complete.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/textarea-complete.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/tpl/autocomplete.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/tpl/autocomplete.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/autocomplete/tpl/autocomplete.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/autocomplete/tpl/autocomplete.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/calendar.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/date-panel.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/date-panel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/double-calendar.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/double-calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/month-panel.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/month-panel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/time-panel.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/time-panel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/bar.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/bar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/bar.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/bar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/calendar.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/calendar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/calendar.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/double-calendar.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/double-calendar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/double-calendar.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/double-calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/time.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/time.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/tpl/time.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/tpl/time.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/calendar/year-panel.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/calendar/year-panel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/cascade/cascade.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/cascade/cascade.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/chart/chart.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/chart/chart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/chart/highcharts-more.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/chart/highcharts-more.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/chart/highcharts.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/chart/highcharts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/daparser.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/daparser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/dialog/confirm-box.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/dialog/confirm-box.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/dialog/dialog.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/dialog/dialog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/dialog/tpl/button.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/dialog/tpl/button.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/dialog/tpl/button.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/dialog/tpl/button.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/dialog/tpl/dialog.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/dialog/tpl/dialog.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/dialog/tpl/dialog.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/dialog/tpl/dialog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/baidu.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/baidu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/Editor.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/Editor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/EventBase.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/EventBase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/Range.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/Range.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/Selection.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/Selection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/ajax.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/browser.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/browser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/domUtils.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/domUtils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/dtd.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/dtd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/filternode.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/filternode.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/filterword.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/filterword.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/node.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/node.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/core/utils.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/core/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/dom.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/dom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/editor.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/editor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/lang/zh-cn/zh-cn.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/lang/zh-cn/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/myplugins/links/plugin.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/myplugins/links/plugin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/myplugins/links/tpl/content.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/myplugins/links/tpl/content.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/myplugins/links/tpl/content.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/myplugins/links/tpl/content.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugin.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/autofloat.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/autofloat.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/autoheight.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/autoheight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/autolink.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/autolink.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/autotypeset.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/autotypeset.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/basestyle.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/basestyle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/blockquote.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/blockquote.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/cleardoc.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/cleardoc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/contextmenu.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/contextmenu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/convertcase.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/convertcase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/defaultfilter.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/defaultfilter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/directionality.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/directionality.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/elementpath.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/elementpath.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/enterkey.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/enterkey.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/fiximgclick.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/fiximgclick.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/font.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/font.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/formatmatch.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/formatmatch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/horizontal.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/horizontal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/image.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/image.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/indent.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/indent.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/inserthtml.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/inserthtml.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/justify.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/justify.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/keystrokes.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/keystrokes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/lineheight.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/lineheight.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/link.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/link.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/list.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/list.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/paragraph.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/paragraph.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/paste.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/paste.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/preview.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/preview.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/print.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/print.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/puretxtpaste.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/puretxtpaste.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/removeformat.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/removeformat.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/rowspacing.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/rowspacing.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/selectall.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/selectall.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/shortcutmenu.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/shortcutmenu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/source.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/source.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/table.action.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/table.action.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/table.cmds.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/table.cmds.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/table.core.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/table.core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/undo.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/undo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/plugins/wordcount.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/plugins/wordcount.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ueditor.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ueditor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/autotypesetbutton.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/autotypesetbutton.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/autotypesetpicker.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/autotypesetpicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/breakline.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/breakline.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/button.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/button.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/cellalignpicker.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/cellalignpicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/colorbutton.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/colorbutton.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/colorpicker.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/colorpicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/combox.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/combox.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/dialog.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/dialog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/editor.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/editor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/editorui.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/editorui.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/mask.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/mask.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/menu.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/menu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/menubutton.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/menubutton.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/multiMenu.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/multiMenu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/pastepicker.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/pastepicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/popup.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/popup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/separator.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/separator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/shortcutmenu.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/shortcutmenu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/splitbutton.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/splitbutton.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/stateful.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/stateful.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/tablebutton.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/tablebutton.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/tablepicker.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/tablepicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/toolbar.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/toolbar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/ui.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/ui.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/uibase.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/uibase.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/editor/ueditor/ui/uiutils.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/editor/ueditor/ui/uiutils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/map/baidu/map.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/map/baidu/map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/mask.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/mask.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/overlay.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/overlay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/pagination/pagination.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/pagination/pagination.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/popup.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/popup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/accordion.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/accordion.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/carousel.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/carousel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/plugins/autoplay.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/plugins/autoplay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/plugins/circular.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/plugins/circular.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/plugins/effects.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/plugins/effects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/slide.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/slide.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/switchable.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/switchable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/switchable/tabs.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/switchable/tabs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/tip/basic-tip.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/tip/basic-tip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/tip/tip.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/tip/tip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/tip/tpl/tip.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/tip/tpl/tip.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/tip/tpl/tip.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/tip/tpl/tip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/tree/ztree/ztree.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/tree/ztree/ztree.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/cmp/widget.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/cmp/widget.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/ex/util/emoji.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/ex/util/emoji.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/ajax.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/aspect.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/aspect.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/attribute.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/attribute.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/base.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/base.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/bom/browser.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/bom/browser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/bom/cookie.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/bom/cookie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/bom/history.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/bom/history.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/class.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/class.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/date.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/date.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/action.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/action.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/audio/audio-html5.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/audio/audio-html5.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/audio/audio-swf.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/audio/audio-swf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/audio/audio.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/audio/audio.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/audio/audiojs.as" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/audio/audiojs.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/audio/tpl/swf.html" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/audio/tpl/swf.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/audio/tpl/swf.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/audio/tpl/swf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/dnd.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/dnd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/easing.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/easing.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/iframe-shim.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/iframe-shim.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/image.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/image.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/inputor.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/inputor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/keyboard.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/keyboard.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/placeholder.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/placeholder.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/position.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/position.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/scroll.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/scroll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/selection.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/selection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/sortable.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/sortable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/sticky.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/sticky.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/upload/swfupload.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/upload/swfupload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/upload/upload-draggable.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/upload/upload-draggable.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/upload/upload-html5.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/upload/upload-html5.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/upload/upload-swfupload.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/upload/upload-swfupload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/upload/upload.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/upload/upload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/dom/wheel.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/dom/wheel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/encry/base64.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/encry/base64.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/encry/md5.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/encry/md5.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/event.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/event.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/json.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/json.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/string.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/src/lib/util/timer.js" afterPath="$PROJECT_DIR$/_backup/static/js/src/lib/util/timer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/swf/audiojs.swf" afterPath="$PROJECT_DIR$/_backup/static/swf/audiojs.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/swf/swfupload.swf" afterPath="$PROJECT_DIR$/_backup/static/swf/swfupload.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/css/404.css" afterPath="$PROJECT_DIR$/_backup/static/themes/default/css/404.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/css/about.css" afterPath="$PROJECT_DIR$/_backup/static/themes/default/css/about.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/css/archives.css" afterPath="$PROJECT_DIR$/_backup/static/themes/default/css/archives.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/css/article.css" afterPath="$PROJECT_DIR$/_backup/static/themes/default/css/article.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/css/base.css" afterPath="$PROJECT_DIR$/_backup/static/themes/default/css/base.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/css/tag.css" afterPath="$PROJECT_DIR$/_backup/static/themes/default/css/tag.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/404.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/404.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/about.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/about.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/archives.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/archives.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/article.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/article.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/base.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/base.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_article.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_article.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_basic.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_basic.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_highlight.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_highlight.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_layout.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_layout.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_list.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_list.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_pagination.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_pagination.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_reset.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_reset.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/_setting.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/_setting.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_bordered-pulled.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_core.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_core.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_fixed-width.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_fixed-width.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_font-awesome.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_font-awesome.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_icons.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_icons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_larger.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_larger.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_list.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_list.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_mixins.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_mixins.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_path.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_path.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_rotated-flipped.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_spinning.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_spinning.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_stacked.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_stacked.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/modules/font-awesome/_variables.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/modules/font-awesome/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/themes/default/scss/tag.scss" afterPath="$PROJECT_DIR$/_backup/static/themes/default/scss/tag.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tag/javascript.html" afterPath="$PROJECT_DIR$/_backup/tag/javascript.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tag/life.html" afterPath="$PROJECT_DIR$/_backup/tag/life.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tag/template.html" afterPath="$PROJECT_DIR$/_backup/tag/template.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tag/ubuntu.html" afterPath="$PROJECT_DIR$/_backup/tag/ubuntu.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template in javascript.html" afterPath="$PROJECT_DIR$/_backup/template in javascript.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ubuntu 12.04 LTS development environment configuration.html" afterPath="$PROJECT_DIR$/_backup/ubuntu 12.04 LTS development environment configuration.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/use a example to explain scope in javascript.html" afterPath="$PROJECT_DIR$/_backup/use a example to explain scope in javascript.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/why can not inherit like this.html" afterPath="$PROJECT_DIR$/_backup/why can not inherit like this.html" />
+    </list>
+    <ignored path="caolvchong.github.com.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="caolvchong.github.com" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16964285" vertical-offset="0" max-vertical-offset="448">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello-world.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="798">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draft.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scaffolds/draft.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scaffolds/photo.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caolvchong.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caolvchong.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caolvchong.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caolvchong.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caolvchong.github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scaffolds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meifa-api" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_backup" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de31ffda-819d-49ce-865f-50f48e3a0767" name="Default" comment="" />
+      <created>1421388212363</created>
+      <updated>1421388212363</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33245033" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6" vertical-offset="2343" max-vertical-offset="2698">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16964285" vertical-offset="0" max-vertical-offset="448">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="798">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaffolds/draft.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="341">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="341">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaffolds/photo.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="341">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="341">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
