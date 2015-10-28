@@ -1,0 +1,843 @@
+<!doctype html>
+<html class="theme-next use-motion">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.3.0rc5"/>
+
+
+    <meta name="description" content="生活点滴" />
+
+
+
+	<meta name="keywords" content="javascript,template," />
+
+  <title> javascript中的模板 // Tom's blog </title>
+</head>
+
+<body>
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+    <a href="/" class="brand">
+        <span class="logo">
+          <i class="icon-logo"></i>
+        </span>
+        <span class="site-title">Tom's blog</span>
+    </a>
+</h1>
+
+
+  <ul id="menu" class="menu">
+    
+      
+      <li class="menu-item menu-item-home">
+        <a href="/">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-archives">
+        <a href="/archives">
+          <i class="menu-item-icon icon-archives"></i> <br />
+          归档
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-tags">
+        <a href="/tags">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+    
+  </ul>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+            
+          
+
+          <div id="posts" class="posts-expand">
+            
+  
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              javascript中的模板
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              发表于 2013-08-22
+            
+          </span>
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2013/08/23/javascript中的模版/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2013/08/23/javascript中的模版/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          <h2 id="字符串困境">字符串困境</h2><p>先来看看下面，这些代码都真实存在某些项目中：</p>
+<p>push方式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> searchAuthList = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        url:<span class="string">'/user/issuers'</span>,</span><br><span class="line">        type:<span class="string">'get'</span>,</span><br><span class="line">        dataType:<span class="string">'json'</span>,</span><br><span class="line">        success:<span class="function"><span class="keyword">function</span> <span class="params">(data)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> users = data.rows;</span><br><span class="line">            <span class="keyword">var</span> arrHtml = [];</span><br><span class="line">            arrHtml.push(<span class="string">'&lt;tr class="auth-tr-title"&gt;&lt;th class="auth-th-name"&gt;姓名&lt;/th&gt;&lt;th class="auth-th-name"&gt;部门&lt;/th&gt;&lt;th class="auth-th-numb"&gt;发起悬赏数量&lt;/th&gt;&lt;th class="auth-th-opr"&gt;操作&lt;/th&gt;&lt;/tr&gt;'</span>);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; users.length; i++) &#123;</span><br><span class="line">                <span class="keyword">var</span> user = users[i];</span><br><span class="line">                <span class="keyword">var</span> deptName = user.deptName || DEPT_NAME;</span><br><span class="line">                arrHtml.push(<span class="string">'&lt;tr&gt;'</span>);</span><br><span class="line">                arrHtml.push(<span class="string">'&lt;td&gt;'</span> + user.name + <span class="string">'&lt;/td&gt;'</span>);</span><br><span class="line">                arrHtml.push(<span class="string">'&lt;td&gt;'</span> + deptName + <span class="string">'&lt;/td&gt;'</span>);</span><br><span class="line">                arrHtml.push(<span class="string">'&lt;td&gt;'</span> + user.issue + <span class="string">'&lt;/td&gt;'</span>);</span><br><span class="line">                arrHtml.push(<span class="string">'&lt;td&gt;&lt;a reward-id="'</span> + user._id + <span class="string">'" data-action="cancelAuth"&gt;取消授权&lt;/a&gt;&lt;/td&gt;'</span>);</span><br><span class="line">                arrHtml.push(<span class="string">'&lt;/tr&gt;'</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            $(<span class="string">'#authorizorList'</span>).html(arrHtml.join(<span class="string">''</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>直接拼接方式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">rankAjax</span><span class="params">(rid)</span></span>&#123;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        url: <span class="string">'/rank/top10'</span>,</span><br><span class="line">        type: <span class="string">'get'</span>,</span><br><span class="line">        dataType: <span class="string">'json'</span>,</span><br><span class="line">        data:&#123;</span><br><span class="line">            method: rid</span><br><span class="line">        &#125;,</span><br><span class="line">        success: <span class="function"><span class="keyword">function</span><span class="params">(data,textStatus)</span></span>&#123;</span><br><span class="line">            <span class="keyword">var</span> info = <span class="string">''</span>;</span><br><span class="line">            info += <span class="string">'&lt;ul&gt;'</span>;</span><br><span class="line">            <span class="keyword">if</span> (data.rows.length===<span class="number">0</span>) &#123;</span><br><span class="line">                info += <span class="string">'&lt;li&gt;暂无排行&lt;/li&gt;'</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;data.rows.length;i++)&#123;</span><br><span class="line">                    info += <span class="string">'    &lt;li&gt;'</span>;</span><br><span class="line">                    info += <span class="string">'        &lt;div class="cnt"&gt;'</span>;</span><br><span class="line">                    info += <span class="string">'            '</span>+(i+<span class="number">1</span>)+<span class="string">'. '</span>+data.rows[i].name;</span><br><span class="line">                    info += <span class="string">'        &lt;/div&gt;'</span>;</span><br><span class="line">                    <span class="keyword">if</span>(rid===<span class="number">1</span>)&#123;</span><br><span class="line">                        info += <span class="string">'        &lt;div class="fr"&gt;参与'</span>+data.rows[i].joined+<span class="string">'个悬赏&lt;/div&gt;'</span>;</span><br><span class="line">                    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(rid===<span class="number">2</span>)&#123;</span><br><span class="line">                        info += <span class="string">'        &lt;div class="fr"&gt;贡献值：'</span>+data.rows[i].points+<span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    info += <span class="string">'    &lt;/li&gt;'</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            info += <span class="string">'&lt;/ul&gt;'</span>;</span><br><span class="line">            $(<span class="string">'.xs_rank'</span>).append(info);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>直接在javascript中写html，主要存在的问题是可读性差，维护难度大。一旦代码量达到一定程度，这些字符串拼接会成为代码失控的一个重要原因。<br>注：<code>push方式</code> 还是 <code>+方式</code> 哪种效率更高，这样的讨论很多，这里就有一篇： <a href="http://www.zhihu.com/question/19747496" title="字符串拼接效率" target="_blank" rel="external">传送门</a></p>
+<p>然后再来看看使用模版的代码：<br>模版代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"weibo"</span> <span class="attribute">data-tid</span>=<span class="value">"&#123;&#123;topic.tid&#125;&#125;"</span> <span class="attribute">data-role</span>=<span class="value">"weibo"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"header"</span>&gt;</span></span><br><span class="line">    &#123;&#123;Global.Helper.avatar(topic.user)&#125;&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name-and-date"</span>&gt;</span></span><br><span class="line">        &#123;&#123;Global.Helper.userLink(topic.user)&#125;&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"date"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">data-role</span>=<span class="value">"date"</span>&gt;</span>&#123;&#123;Global.Helper.cuteDate(topic.post_time)&#125;&#125;<span class="tag">&lt;/<span class="title">span</span>&gt;</span> <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"emptyspan"</span>&gt;</span>来自&#123;&#123;topic.from_string&#125;&#125;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"emptyspan"</span>&gt;</span>阅读(&#123;&#123;topic.glances&#125;&#125;)<span class="tag">&lt;<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>使用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tpl = <span class="built_in">require</span>(<span class="string">'path/to/template'</span>);</span><br><span class="line">tpl.render(&#123;</span><br><span class="line">    topic: data        </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="模板系统">模板系统</h2><p>javascript中的所谓模板，本质就是HTML，在其中可以输入一些变量，达到动态输出的目的。为了满足可读性和维护方面的成本，就要求这些模板在书写的时候就是HTML。<br>这些在WEB相关的模板，无论后端还是前端，都有体现。比如PHP中的Smarty，nodeJS中的EJS；前端中的<a href="http://handlebarsjs.com" title="handlerbars模板" target="_blank" rel="external">handlebars</a>，等等。</p>
+<p>模板设计的一个原则： <strong>简单，减少逻辑性</strong></p>
+<p>这个原则是程序设计上 keep it simple 的体现。视图方面保持简单，少逻辑，对于后期的维护帮助是非常大的。从 <a href="https://github.com/janl/mustache.js" title="mustache.js模板" target="_blank" rel="external">mustache.js</a> 这个前端模板的设计上我们也能感受到这一点。<br>现在的前端模板非常多，目前最经常被使用的是<a href="http://handlebarsjs.com" title="handlerbars模板" target="_blank" rel="external">handlebars</a>。</p>
+<p>很多模板思路是在HTML文件中插入一个标签，比如<code>pre</code>或者<code>script</code>并将type设置成其他不可解析的，然后从中获取到HTML再进行解析。这种做法有几点不好：</p>
+<ol>
+<li>强制混入到页面中，有些模板是多个页面公用的，造成代码的重复和多方维护  </li>
+<li>每次都从DOM获取HTML，再解析，性能上不好</li>
+</ol>
+<p><a href="http://handlebarsjs.com" title="handlerbars模板" target="_blank" rel="external">handlebars</a>支持这种方式，也支持预编译方式： <a href="http://handlebarsjs.com/precompilation.html" title="handlerbars预编译" target="_blank" rel="external">传送门</a>。预编译就是提前将HTML模板编译成javascript，可以直接调用。<br><a href="https://github.com/caolvchong/gazira" title="a javascript library for web develop" target="_blank" rel="external">gazira</a> 中采用了自己的一套模板方式<a href="https://github.com/caolvchong/tpl" title="gazira模板工具" target="_blank" rel="external">tpl</a>，使用预编译方式，将模板编译成支持<a href="http://seajs.org/" title="javascript模块化开发工具" target="_blank" rel="external">seajs</a>的模块，直接require使用即可。</p>
+<h2 id="gazira中的模板">gazira中的模板</h2><h3 id="安装">安装</h3><p><a href="https://github.com/caolvchong/tpl" title="gazira模板工具" target="_blank" rel="external">tpl</a>已经是npm下的一个包，安装命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install tpl2js -g</span><br></pre></td></tr></table></figure>
+<h3 id="编译">编译</h3><p>直接编写HTML，再使用编译命令进行编译：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tpl 模板文件 [目标文件] [ --fn name] [ --charset charset]</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<ul>
+<li>模板文件必须存在</li>
+<li>目标文件如果没有输入，则在模板文件的同目录下生成同名，以tpl.js结尾的文件</li>
+<li>—fn 指定输出为普通的function结构，把结果返回给name，不指定—fn默认将输出支持seajs的结构</li>
+<li>—charset指定文件的编码，默认UTF-8，非UTF-8时候需要指定，防止乱码</li>
+</ul>
+<h3 id="语法">语法</h3><p>模板中支持简单的逻辑语法，使用两对换括号包裹起来 </p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="collection">&#123;<span class="collection">&#123;  &#125;</span>&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="变量">变量</h4><p>变量和表达式都可以使用</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="collection">&#123;<span class="collection">&#123;param&#125;</span>&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="条件判断">条件判断</h4><p><code>else if</code> 和 <code>else</code> 是可选的</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;<span class="keyword">if</span>(<span class="keyword">...</span>)&#125;&#125;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">&#123;&#123;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="keyword">...</span>)&#125;&#125;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">&#123;&#123;<span class="keyword">else</span>&#125;&#125;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">&#123;&#123;endif&#125;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="循环遍历">循环遍历</h4><p>循环一个数组，start、end、reverse、step可选</p>
+<figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="expression">&#123;&#123;<span class="variable">for</span> <span class="variable">data</span>=数据<span class="variable">list</span> <span class="variable">key</span>=索引 <span class="variable">item</span>=元 <span class="variable">start</span>=起始索引 <span class="variable">end</span>=结束索引 <span class="variable">reverse</span>=是否逆序 <span class="variable">step</span>=步长&#125;&#125;</span><span class="xml"></span><br><span class="line">    ...</span><br><span class="line"></span><span class="expression">&#123;&#123;<span class="variable">endfor</span>&#125;&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>其中，可选变量有以下默认值：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">key: _key</span><br><span class="line"><span class="property">item</span>: _item</span><br><span class="line">start: <span class="number">0</span>, <span class="property">reverse</span>为<span class="constant">true</span>时为 <span class="type">list</span>.<span class="property">length</span> - <span class="number">1</span></span><br><span class="line"><span class="keyword">end</span>: <span class="type">list</span>.<span class="property">length</span> - <span class="number">1</span>, <span class="property">reverse</span>为<span class="constant">true</span>时为 <span class="number">0</span></span><br><span class="line"><span class="property">reverse</span>: <span class="constant">false</span></span><br><span class="line">step: <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>循环一个对象，object标识这是对象遍历</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;<span class="keyword">for</span> data=数据list key=键 item=值 object=<span class="number">1</span>&#125;&#125;</span><br><span class="line">    <span class="keyword">...</span></span><br><span class="line">&#123;&#123;endfor&#125;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="注释">注释</h4><p>所有注释在编译的文件中不存在</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 单行注释 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!--</span><br><span class="line">    多行注释</span><br><span class="line">    多行注释</span><br><span class="line">--&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="其他">其他</h4><p>模板允许直接执行javascript代码，尽量少用，以便减少逻辑代码。一般用来模板中的一些调试。</p>
+<figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="expression">&#123;&#123;<span class="variable">eval</span> <span class="variable">console.<span class="keyword">log</span></span>('<span class="variable">something</span>')&#125;&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<h3 id="使用模板">使用模板</h3><p>编译生成的js文件，都提供了一个render方法，该方法接受一个JSON参数作为数据源，返回结果是一个HTML字符串。</p>
+<p>seajs方式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tpl = <span class="built_in">require</span>(<span class="string">'path/to/template'</span>);</span><br><span class="line">tpl.render(data);</span><br></pre></td></tr></table></figure>
+<p>普通function方式<br>例如使用以下编译方式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tpl hello.html --fn my.tpl.hello</span><br></pre></td></tr></table></figure>
+<p>生成模板hello.tpl.js。引入该js后可以使用：(需要事先有my.tpl这个命名空间，可以自定义)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">my.tpl.hello.render(data);</span><br></pre></td></tr></table></figure>
+<p>或者自己将其复制到任意的地方来使用</p>
+<h3 id="子模板">子模板</h3><p><a href="https://github.com/caolvchong/tpl" title="gazira模板工具" target="_blank" rel="external">tpl</a> 没有提供子模板功能，如果一个模板中需要调用其他模板，可以使用变量方式：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mainTpl = <span class="built_in">require</span>(<span class="string">'./main'</span>);</span><br><span class="line"><span class="keyword">var</span> itemTpl = <span class="built_in">require</span>(<span class="string">'./item'</span>);</span><br><span class="line">mainTpl.render(&#123;</span><br><span class="line">    itemTpl: itemTpl,</span><br><span class="line">    otherData: ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="例子">例子</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span><span class="params">(require, exports, module)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'$'</span>);</span><br><span class="line">    <span class="keyword">var</span> tpl = <span class="built_in">require</span>(<span class="string">'./tpl'</span>);</span><br><span class="line"></span><br><span class="line">    $(<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        $(<span class="string">'#btn'</span>).click(<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            $(<span class="string">'#tpl-box'</span>).append(tpl.render(&#123;</span><br><span class="line">                title: <span class="string">'关系'</span>,</span><br><span class="line">                name: <span class="string">'李四'</span>,</span><br><span class="line">                sex: <span class="number">2</span>,</span><br><span class="line">                friendList: [&#123;</span><br><span class="line">                    name: <span class="string">'张三'</span>,</span><br><span class="line">                    sex: <span class="number">1</span></span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    name: <span class="string">'王五'</span></span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    name: <span class="string">'钱七'</span>,</span><br><span class="line">                    sex: <span class="number">2</span></span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    name: <span class="string">'孙二'</span></span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    name: <span class="string">'陈八'</span>,</span><br><span class="line">                    sex: <span class="number">2</span></span><br><span class="line">                &#125;],</span><br><span class="line">                info: &#123;</span><br><span class="line">                    name: <span class="string">'王八'</span>,</span><br><span class="line">                    age: <span class="number">28</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;))</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+              <blockquote class="article-copyright">
+                <ul>
+                    <li>作者：<a href="/" title="Tom/caolvchong/洪军钊">洪军钊</a></li>
+                    <li>原文：<a href="/2013/08/23/javascript中的模版/" title="javascript中的模板">javascript中的模板</a></li>
+                    <li>本文允许任意转载，但必须以链接形式注明作者和原文出处，并给出本声明</li>
+                </ul>
+              </blockquote>
+        
+        
+          <div class="post-tags">
+            
+              <a href="/tags/javascript/">
+                #javascript
+              </a>
+            
+              <a href="/tags/template/">
+                #template
+              </a>
+            
+          </div>
+        
+
+        
+          <div class="post-nav">
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2014/02/09/ubuntu 12.04 LTS 配备/">ubuntu 12.04 LTS 配备</a>
+              
+            </div>
+
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2012/06/08/为什么不能这么继承/">为什么不能这么继承</a>
+              
+            </div>
+          </div>
+        
+
+        
+        
+      </div>
+    
+  </div>
+
+
+
+  
+    <div class="comments" id="comments">
+      
+        <div class="ds-thread" data-thread-key="2013/08/23/javascript中的模版/"
+             data-title="javascript中的模板" data-url="https://caolvchong.github.io/2013/08/23/javascript中的模版/">
+        </div>
+
+      
+    </div>
+  
+
+          </div>
+
+          
+        </div>
+
+        
+<div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+    
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview" data-target="site-overview">
+          站点概览
+        </li>
+      </ul>
+    
+
+    <div class="site-overview">
+      <div class="site-author motion-element">
+        <img class="site-author-image" src="/images/default_avatar.jpg" alt="Tom/caolvchong/洪军钊" />
+        <p class="site-author-name">Tom/caolvchong/洪军钊</p>
+      </div>
+      <p class="site-description motion-element">生活点滴</p>
+      <div class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </div>
+        <div class="site-state-item site-state-tags">
+            <span class="site-state-item-count">4</span>
+            <span class="site-state-item-name">标签</span>
+        </div>
+        <div class="site-state-item site-state-pages">
+            <span class="site-state-item-count">1</span>
+            <span class="site-state-item-name">页面</span>
+        </div>
+      </div>
+
+      
+
+      <div class="social-info motion-element">
+        
+          
+            <span class="social-item">
+              <a href="https://github.com/caolvchong">GitHub</a>
+            </span>
+          
+            <span class="social-item">
+              <a href="http://weibo.com/ecma">Weibo</a>
+            </span>
+          
+        
+      </div>
+
+    </div>
+
+    
+      <div class="post-toc sidebar-panel-active">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串困境"><span class="nav-number">1.</span> <span class="nav-text">字符串困境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板系统"><span class="nav-number">2.</span> <span class="nav-text">模板系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gazira中的模板"><span class="nav-number">3.</span> <span class="nav-text">gazira中的模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译"><span class="nav-number">3.2.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">3.3.</span> <span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">3.3.1.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#条件判断"><span class="nav-number">3.3.2.</span> <span class="nav-text">条件判断</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#循环遍历"><span class="nav-number">3.3.3.</span> <span class="nav-text">循环遍历</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注释"><span class="nav-number">3.3.4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他"><span class="nav-number">3.3.5.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用模板"><span class="nav-number">3.4.</span> <span class="nav-text">使用模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子模板"><span class="nav-number">3.5.</span> <span class="nav-text">子模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例子"><span class="nav-number">3.6.</span> <span class="nav-text">例子</span></a></li></ol></li></ol>
+      </div>
+    
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2009 - 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Tom/caolvchong/洪军钊</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT</a>
+</div>
+
+
+
+  <div class="cc-license">
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+      <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+    </a>
+  </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript">
+  function hasMobileUA () {
+    var nav = window.navigator;
+    var ua = nav.userAgent;
+    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+
+    return pa.test(ua);
+  }
+
+  function isDesktop () {
+    return screen.width > 991 && !hasMobileUA();
+  }
+
+  function isTablet () {
+    return screen.width < 992 && screen.width > 767 && hasMobileUA();
+  }
+
+  function isMobile () {
+    return screen.width < 767 && hasMobileUA();
+  }
+
+  function escapeSelector (selector) {
+    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
+  }
+</script>
+
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  
+
+  <script type="text/javascript" id="motion.global">
+  $(document).ready(function () {
+    var body = $('body');
+    var isSidebarVisible = false;
+    var sidebarToggle = $('.sidebar-toggle');
+    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
+    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
+    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
+    var sidebar = $('.sidebar');
+
+    var SIDEBAR_WIDTH = '320px';
+    var SIDEBAR_DISPLAY_DURATION = 300;
+
+    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
+
+    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
+    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
+
+    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
+    var sidebarToogleLine2ndStatusClose = {opacity: 0};
+
+    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
+    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
+
+    sidebatToggleMotion();
+    postsListMotion();
+    backToTopMotion();
+
+
+    $(document)
+      .on('sidebar.isShowing', function () {
+        isDesktop() && body.velocity(
+          {paddingRight: SIDEBAR_WIDTH},
+          SIDEBAR_DISPLAY_DURATION
+        );
+        sidebarContentMotion();
+      })
+      .on('sidebar.isHiding', function () {});
+
+
+    function backToTopMotion () {
+      var b2top = $('.back-to-top');
+      b2top.on('click', function () {
+        body.velocity('scroll');
+      });
+    }
+
+    function sidebarShowMotion () {
+
+      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
+      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
+      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
+
+      sidebar.velocity({width: SIDEBAR_WIDTH}, {
+        display: 'block',
+        duration: SIDEBAR_DISPLAY_DURATION,
+        complete: function () {
+          sidebar.addClass('sidebar-active');
+          sidebar.trigger('sidebar.didShow');
+        }
+      });
+      sidebar.trigger('sidebar.isShowing');
+    }
+
+    function sidebarHideMotion () {
+      isDesktop() && body.velocity({paddingRight: 0});
+      sidebar.velocity('reverse');
+
+      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
+      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
+      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
+
+      sidebar.removeClass('sidebar-active');
+      sidebar.trigger('sidebar.isHiding');
+    };
+
+    function sidebarContentMotion () {
+      $('.sidebar .motion-element').velocity(
+        'transition.slideRightIn',
+        {stagger: 50, drag: true}
+      );
+    }
+
+    function postsListMotion () {
+      $('.post').velocity('transition.slideDownIn', {stagger: 300, drag: true});
+    }
+
+    function sidebatToggleMotion () {
+      sidebarToggle.on('click', function () {
+        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+        isSidebarVisible = !isSidebarVisible;
+      });
+
+      sidebarToggle.hover(function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
+      }, function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
+      });
+    }
+  });
+
+</script>
+
+
+
+
+
+  
+  
+<script type="text/javascript" id="bootstrap.scrollspy.custom">
+  /* ========================================================================
+  * Bootstrap: scrollspy.js v3.3.2
+  * http://getbootstrap.com/javascript/#scrollspy
+  * ========================================================================
+  * Copyright 2011-2015 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * ======================================================================== */
+
+  /**
+   * Custom by iissnan
+   *
+   * - Add a `clear.bs.scrollspy` event.
+   * - Esacpe targets selector.
+   */
+
+
+  +function ($) {
+    'use strict';
+
+    // SCROLLSPY CLASS DEFINITION
+    // ==========================
+
+    function ScrollSpy(element, options) {
+      this.$body          = $(document.body)
+      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+      this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+      this.selector       = (this.options.target || '') + ' .nav li > a'
+      this.offsets        = []
+      this.targets        = []
+      this.activeTarget   = null
+      this.scrollHeight   = 0
+
+      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+      this.refresh()
+      this.process()
+    }
+
+    ScrollSpy.VERSION  = '3.3.2'
+
+    ScrollSpy.DEFAULTS = {
+      offset: 10
+    }
+
+    ScrollSpy.prototype.getScrollHeight = function () {
+      return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+    }
+
+    ScrollSpy.prototype.refresh = function () {
+      var that          = this
+      var offsetMethod  = 'offset'
+      var offsetBase    = 0
+
+      this.offsets      = []
+      this.targets      = []
+      this.scrollHeight = this.getScrollHeight()
+
+      if (!$.isWindow(this.$scrollElement[0])) {
+        offsetMethod = 'position'
+        offsetBase   = this.$scrollElement.scrollTop()
+      }
+
+      this.$body
+        .find(this.selector)
+        .map(function () {
+          var $el   = $(this)
+          var href  = $el.data('target') || $el.attr('href')
+          var $href = /^#./.test(href) && $(escapeSelector(href)) // Need to escape selector.
+
+          return ($href
+            && $href.length
+            && $href.is(':visible')
+            && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+        })
+        .sort(function (a, b) { return a[0] - b[0] })
+        .each(function () {
+          that.offsets.push(this[0])
+          that.targets.push(this[1])
+        })
+
+
+    }
+
+    ScrollSpy.prototype.process = function () {
+      var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+      var scrollHeight = this.getScrollHeight()
+      var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+      var offsets      = this.offsets
+      var targets      = this.targets
+      var activeTarget = this.activeTarget
+      var i
+
+      if (this.scrollHeight != scrollHeight) {
+        this.refresh()
+      }
+
+      if (scrollTop >= maxScroll) {
+        return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+      }
+
+      if (activeTarget && scrollTop < offsets[0]) {
+        $(this.selector).trigger('clear.bs.scrollspy')  // Add a custom event.
+        this.activeTarget = null
+        return this.clear()
+      }
+
+      for (i = offsets.length; i--;) {
+        activeTarget != targets[i]
+          && scrollTop >= offsets[i]
+          && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
+          && this.activate(targets[i])
+      }
+    }
+
+    ScrollSpy.prototype.activate = function (target) {
+      this.activeTarget = target
+
+      this.clear()
+
+      var selector = this.selector +
+        '[data-target="' + target + '"],' +
+        this.selector + '[href="' + target + '"]'
+
+      var active = $(selector)
+        .parents('li')
+        .addClass('active')
+
+      if (active.parent('.dropdown-menu').length) {
+        active = active
+          .closest('li.dropdown')
+          .addClass('active')
+      }
+
+      active.trigger('activate.bs.scrollspy')
+    }
+
+    ScrollSpy.prototype.clear = function () {
+      $(this.selector)
+        .parentsUntil(this.options.target, '.active')
+        .removeClass('active')
+    }
+
+
+    // SCROLLSPY PLUGIN DEFINITION
+    // ===========================
+
+    function Plugin(option) {
+      return this.each(function () {
+        var $this   = $(this)
+        var data    = $this.data('bs.scrollspy')
+        var options = typeof option == 'object' && option
+
+        if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+        if (typeof option == 'string') data[option]()
+      })
+    }
+
+    var old = $.fn.scrollspy
+
+    $.fn.scrollspy             = Plugin
+    $.fn.scrollspy.Constructor = ScrollSpy
+
+
+    // SCROLLSPY NO CONFLICT
+    // =====================
+
+    $.fn.scrollspy.noConflict = function () {
+      $.fn.scrollspy = old
+      return this
+    }
+
+
+    // SCROLLSPY DATA-API
+    // ==================
+
+    $(window).on('load.bs.scrollspy.data-api', function () {
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this)
+        Plugin.call($spy, $spy.data())
+      })
+    })
+
+  }(jQuery);
+</script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+    }
+
+    function getTOCMaxHeight () {
+      // TODO: Make it beautiful
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+        parseInt($sidebarInner.css('padding-top'), 10) -
+        parseInt($sidebarInner.css('padding-bottom'), 10) -
+        $('.sidebar-nav').height() -
+        parseInt($tocSelector.css('margin-top'), 10) -
+        parseInt($tocSelector.css('margin-bottom'), 10);
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+      });
+    }
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      if ($('.post-toc').html().trim().length > 0 && isDesktop()) {
+        setTimeout(function () {
+          $('.sidebar-toggle').trigger('click');
+        }, 800);
+      }
+    });
+  </script>
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tomblog"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+  
+</body>
+</html>
